@@ -5,7 +5,9 @@
   background-color: whitesmoke;
 }
 
-li, a, button {
+li,
+a,
+button {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -26,22 +28,22 @@ nav {
   cursor: pointer;
   color: blue;
   list-style: none;
-
 }
 
 .nav__links {
   list-style: none;
 }
 
-.nav__links li {
+.nav__links,
+li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .nav__links li a {
-  transition: all 0.30 ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
-  color: #0088aa;
+  color: #08a;
 }
