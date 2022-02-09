@@ -1,3 +1,47 @@
-.menu {
-  font-size: medium;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+li, a, button {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.mylogo {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: blue;
+  list-style: none;
+
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.30 ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088aa;
 }
