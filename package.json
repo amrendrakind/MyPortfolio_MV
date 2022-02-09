@@ -1,0 +1,23 @@
+{
+  "name": "myportfolio_mv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrendrakind/MyPortfolio_MV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrendrakind/MyPortfolio_MV/issues"
+  },
+  "homepage": "https://github.com/amrendrakind/MyPortfolio_MV#readme",
+  "devDependencies": {
+    "hint": "^6.1.9"
+  }
+}
