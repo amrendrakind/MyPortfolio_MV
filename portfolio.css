@@ -1,0 +1,144 @@
+li,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.mylogo {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #6070ff;
+  list-style: none;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links,
+li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #08a;
+}
+
+.welcome {
+  flex: auto;
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 260px;
+  margin-top: 359px;
+}
+
+.connect {
+  font-size: 20px;
+  color: #6070ff;
+  line-height: 20px;
+}
+
+.dev-details {
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 260px;
+  margin-right: 260px;
+  margin-top: 12px;
+  text-align: justify;
+}
+
+.connect-icon {
+  margin-left: 260px;
+  margin-top: 25px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 32rem) {
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    align-items: center;
+  }
+
+  .nav__links .line {
+    height: 0.2rem;
+    width: 0.1rem;
+    background-color: #6070ff;
+    margin: 0.2rem;
+  }
+
+  .backimage {
+    background-image: url("./header-shapes\ mobile.png");
+    background-repeat: no-repeat;
+    width: 395px;
+    min-height: 750px;
+  }
+
+  .welcome {
+    font-size: 40px;
+    margin-left: 24px;
+    margin-top: 50px;
+    height: 2px;
+    width: 327px;
+    font-family: 'Poppins', sans-serif;
+    color: #172b4d;
+  }
+
+  .connect {
+    font-size: 20px;
+    color: #6070ff;
+    line-height: 20px;
+    margin-left: 24px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .dev-details {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 24px;
+    margin-top: 250px;
+    width: 330px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: #344563;
+  }
+
+  .connect-icon {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 25px;
+    line-height: 50px;
+  }
+
+  .social-icons a {
+    margin: 10px 05px;
+    font-size: 24px;
+    margin-left: -40px;
+  }
+
+  .social-icons i {
+    color: #505f79;
+  }
+
+  .social-icons a:hover i {
+    color: #6070ff;
+    transition: all ease 0.3s;
+  }
+}
