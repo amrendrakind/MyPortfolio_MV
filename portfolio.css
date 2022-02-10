@@ -97,12 +97,16 @@ li {
     margin-top: 50px;
     height: 2px;
     width: 327px;
+    font-family: 'Poppins', sans-serif;
+    color: #172b4d;
   }
 
   .connect {
     font-size: 20px;
     color: #6070ff;
     line-height: 20px;
+    margin-left: 24px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .dev-details {
@@ -112,12 +116,13 @@ li {
     margin-top: 250px;
     width: 330px;
     text-align: justify;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #344563;
   }
 
   .connect-icon {
     font-size: 16px;
-    margin-left: 24px;
+    margin-left: 0;
     margin-top: 25px;
     line-height: 50px;
   }
@@ -125,6 +130,7 @@ li {
   .social-icons a {
     margin: 10px 05px;
     font-size: 24px;
+    margin-left: -40px;
   }
 
   .social-icons i {
