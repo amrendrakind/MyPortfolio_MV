@@ -1,6 +1,5 @@
 li,
-a,
-button {
+a {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -19,7 +18,7 @@ nav {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  color: blue;
+  color: #6070ff;
   list-style: none;
 }
 
@@ -51,7 +50,7 @@ li {
 
 .connect {
   font-size: 20px;
-  color: blue;
+  color: #6070ff;
   line-height: 20px;
 }
 
@@ -74,15 +73,14 @@ li {
   .nav__links {
     display: flex;
     flex-direction: column;
-    margin-top: 1.5rem;
-    margin-right: 1rem;
+    margin-top: 0.5rem;
     align-items: center;
   }
 
   .nav__links .line {
-    width: 2rem;
     height: 0.2rem;
-    background-color: black;
+    width: 0.1rem;
+    background-color: #6070ff;
     margin: 0.2rem;
   }
 
@@ -103,7 +101,7 @@ li {
 
   .connect {
     font-size: 20px;
-    color: blue;
+    color: #6070ff;
     line-height: 20px;
   }
 
@@ -111,14 +109,30 @@ li {
     font-size: 16px;
     line-height: 22px;
     margin-left: 24px;
-    margin-top: 120px;
+    margin-top: 250px;
     width: 330px;
     text-align: justify;
+    font-family: Helvetica, sans-serif;
   }
 
   .connect-icon {
-    margin-left: 26px;
+    font-size: 16px;
+    margin-left: 24px;
     margin-top: 25px;
     line-height: 50px;
+  }
+
+  .social-icons a {
+    margin: 10px 05px;
+    font-size: 24px;
+  }
+
+  .social-icons i {
+    color: #505f79;
+  }
+
+  .social-icons a:hover i {
+    color: #6070ff;
+    transition: all ease 0.3s;
   }
 }
