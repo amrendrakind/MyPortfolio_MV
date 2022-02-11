@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 li,
 a {
   font-family: sans-serif;
@@ -87,8 +91,7 @@ li {
   .backimage {
     background-image: url("./header-shapes\ mobile.png");
     background-repeat: no-repeat;
-    width: 395px;
-    min-height: 750px;
+    background-size: 100%;
   }
 
   .welcome {
