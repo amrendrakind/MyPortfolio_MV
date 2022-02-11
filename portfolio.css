@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 li,
@@ -143,5 +145,120 @@ li {
   .social-icons a:hover i {
     color: #6070ff;
     transition: all ease 0.3s;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    position: static;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 327px;
+    height: 552px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: calc(50% - 327px / 2);
+  }
+
+  .cardimage {
+    position: static;
+    width: 295px;
+    height: 220px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+  }
+
+  .cardheading {
+    position: static;
+    color: #172b4d;
+    font-size: 32px;
+    line-height: 44px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 12px 0;
+    width: 295px;
+    height: 36px;
+  }
+
+  .canopyitemwrap {
+    display: flex;
+    width: 290px;
+    align-self: flex-start;
+  }
+
+  .cardcanopy {
+    position: static;
+    width: 55px;
+    height: 16px;
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .cardlistitem {
+    color: #7a869a;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
+  .dot {
+    font-size: 1.5rem;
+  }
+
+  .cardabout {
+    color: #344563;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+
+  .cardtechnology {
+    display: flex;
+    width: 180px;
+    flex-direction: row;
+    margin-left: -6px;
+    margin-top: 12px;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    /* margin: 8px; */
+  }
+
+  .technology {
+    background: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: #6070ff;
+    text-align: center;
+    margin: 5px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .btnseeproject {
+    font-size: 17px;
+    line-height: 24px;
+    width: 124px;
+    height: 48px;
+    align-self: flex-start;
+    padding: 12px;
+    margin-top: 16px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color:#396df2;
+    font-weight: 500;
+    background: #fff;
   }
 }
