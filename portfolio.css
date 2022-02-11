@@ -91,7 +91,7 @@ li {
   }
 
   .backimage {
-    background-image: url("./header-shapes\ mobile.png");
+    background-image: url("./header-shapes_mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -232,7 +232,6 @@ li {
     align-items: center;
     justify-content: space-between;
     align-self: flex-start;
-    /* margin: 8px; */
   }
 
   .technology {
@@ -257,7 +256,7 @@ li {
     border: 1px solid #6070ff;
     border-radius: 8px;
     box-sizing: border-box;
-    color:#396df2;
+    color: #396df2;
     font-weight: 500;
     background: #fff;
   }
