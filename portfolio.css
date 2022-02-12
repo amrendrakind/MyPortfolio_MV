@@ -1,12 +1,13 @@
 body {
   margin: 0;
-  background: #fff;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  width: 375px;
+  background: #fdfdfd;
+  font-family: "Poppins", sans-serif;
 }
 
 li,
 a {
-  font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: black;
@@ -102,7 +103,6 @@ li {
     margin-top: 50px;
     height: 2px;
     width: 327px;
-    font-family: 'Poppins', sans-serif;
     color: #172b4d;
   }
 
@@ -111,7 +111,6 @@ li {
     color: #6070ff;
     line-height: 20px;
     margin-left: 24px;
-    font-family: 'Poppins', sans-serif;
   }
 
   .dev-details {
@@ -119,9 +118,8 @@ li {
     line-height: 22px;
     margin-left: 24px;
     margin-top: 250px;
-    width: 330px;
+    width: 327px;
     text-align: justify;
-    font-family: 'Poppins', sans-serif;
     color: #344563;
   }
 
@@ -139,6 +137,10 @@ li {
   }
 
   .social-icons i {
+    color: #505f79;
+  }
+
+  .aboutsocial-icons i {
     color: #505f79;
   }
 
@@ -248,7 +250,7 @@ li {
   .btnseeproject {
     font-size: 17px;
     line-height: 24px;
-    width: 124px;
+    width: auto;
     height: 48px;
     align-self: flex-start;
     padding: 12px;
@@ -259,5 +261,156 @@ li {
     color: #396df2;
     font-weight: 500;
     background: #fff;
+  }
+
+  .about-myselfsection {
+    width: 375px;
+    height: 1050px;
+    margin-left: calc(50% - 327px / 2);
+  }
+
+  .about-myself {
+    width: 227px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    margin-top: 114px;
+    color: #172b4d;
+  }
+
+  .myself-content {
+    width: 327px;
+    text-align: justify;
+  }
+
+  .aboutconnect {
+    font-size: 16px;
+    color: #6070ff;
+    line-height: 20px;
+  }
+
+  .aboutsocial-icons a {
+    margin: 10px 05px;
+    font-size: 24px;
+    margin-left: -60px;
+  }
+
+  .aboutsocial-icons a:hover i {
+    color: #6070ff;
+    transition: all ease 0.3s;
+  }
+
+  .acordianwrapper {
+    margin-top: 35px;
+    width: 327px;
+  }
+
+  .accordion {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 327px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: 0.4s;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .accordion::after {
+    content: "\02C3";
+    color: black;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active::after {
+    content: "\02C5";
+  }
+
+  .panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #dff1e6;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .languagename {
+    width: 303px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #253858;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .contactmecard {
+    height: 779px;
+    border-radius: 100px 0 0 0;
+    background-color: #6070ff;
+    background-size: 100%;
+  }
+
+  .contactme {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .contactmecontent {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+    margin: 24px 24px;
+  }
+
+  input {
+    height: 24px;
+    width: 300px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+  }
+
+  .textarea {
+    height: 170px;
+    padding: 15px 15px 38px;
+    align-items: flex-start;
+    width: 295px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    margin-left: 24px;
+  }
+
+  .btngetittouch {
+    margin-left: 24px;
   }
 }

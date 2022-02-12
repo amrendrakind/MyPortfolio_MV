@@ -100,7 +100,7 @@
         <div class="cardtechnology">
           <div class="technology">html</div>
           <div class="technology">css</div>
-          <div class="technology">javascript</div>
+          <div class="technology">javaScript</div>
         </div>
         <button type="button" class="btnseeproject">See Project</button>
       </div>
@@ -126,7 +126,7 @@
         <div class="cardtechnology">
           <div class="technology">html</div>
           <div class="technology">css</div>
-          <div class="technology">javascript</div>
+          <div class="technology">javaScript</div>
         </div>
         <button type="button" class="btnseeproject">See Project</button>
       </div>
@@ -151,7 +151,7 @@
         <div class="cardtechnology">
           <div class="technology">html</div>
           <div class="technology">css</div>
-          <div class="technology">javascript</div>
+          <div class="technology">javaScript</div>
         </div>
         <button type="button" class="btnseeproject">See Project</button>
       </div>
@@ -176,11 +176,143 @@
         <div class="cardtechnology">
           <div class="technology">html</div>
           <div class="technology">css</div>
-          <div class="technology">javascript</div>
+          <div class="technology">javaScript</div>
         </div>
         <button type="button" class="btnseeproject">See Project</button>
       </div>
     </section>
-    <section class="about-myself"></section>
+    <!-- ////////// Abmout me Section-->
+
+    <section class="about-myselfsection">
+      <div class="about-myself">About Myself</div>
+      <div>
+        <div class="myself-content">
+          <p>
+            I’m a software developer! skilled in React JS, Express JS,
+            javaScript, CSS, HTML, JAVA, Ruby, Ruby on Rails. Hands-on
+            experience in implementing Web Development technologies. Interested
+            in developing softwares. I can help you build a product , feature or
+            website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+        </div>
+        <div class="aboutconnect-icon">
+          <div class="aboutconnect">LET'S CONNECT</div>
+          <ul class="aboutsocial-icons">
+            <li>
+              <a
+                href="https://twitter.com/amrendrak_"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/amrendraakumar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/amrendrakind"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="btnseeproject">Get my resume</button>
+
+      <!-- //////////// -->
+
+      <div class="acordianwrapper">
+        <button class="accordion">Languages</button>
+        <div class="panel">
+          <div class="languagename">
+            <img src="/Ellipse_JS.png" alt="JSIcon" />
+            JavaScript
+          </div>
+          <div class="languagename">
+            <img src="./Ellipse_HTML.png" alt="HTMLIcon" />
+            HTML
+          </div>
+          <div class="languagename">
+            <img src="./Ellipse_CSS.png" alt="CSSIcon" />
+            CSS
+          </div>
+        </div>
+
+        <button class="accordion">Frameworks</button>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <button class="accordion">Skills</button>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
+      </div>
+    </section>
+    <section class="contactmecard">
+      <div class="contactme">Contact me</div>
+      <div class="contactmecontent">
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
+      </div>
+      <form>
+        <input type="text" id="fname" name="fname" value="Amrendra K" /><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          value="amrendrak.ind@gmail.com"
+        /><br />
+        <!-- <textarea class="textarea" type="text" id="lmessage" name="lmessage" placeholder="Write your message here"><br> -->
+        <textarea
+          class="textarea"
+          name="txtarea"
+          id="txtarea"
+          cols="30"
+          rows="10"
+          placeholder="Write your message here"
+        ></textarea>
+        <button type="button" class="btnseeproject btngetittouch">
+          Get It Touch
+        </button>
+      </form>
+    </section>
   </body>
 </html>
