@@ -1,29 +1,9 @@
-li,
-a {
-  font-family: sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-}
-
-.mylogo {
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #6070ff;
-  list-style: none;
-}
-
-.nav__links {
-  list-style: none;
+body {
+  margin: 0;
+  padding: 0;
+  width: 375px;
+  background: #fdfdfd;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav__links,
@@ -70,6 +50,29 @@ li {
 }
 
 @media only screen and (max-width: 32rem) {
+  li,
+  a {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+  }
+
+  .mylogo {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #6070ff;
+    list-style: none;
+  }
+
   .nav__links {
     display: flex;
     flex-direction: column;
@@ -85,10 +88,9 @@ li {
   }
 
   .backimage {
-    background-image: url("./header-shapes\ mobile.png");
+    background-image: url("./header-shapes_mobile.png");
     background-repeat: no-repeat;
-    width: 395px;
-    min-height: 750px;
+    background-size: 100%;
   }
 
   .welcome {
@@ -97,7 +99,6 @@ li {
     margin-top: 50px;
     height: 2px;
     width: 327px;
-    font-family: 'Poppins', sans-serif;
     color: #172b4d;
   }
 
@@ -106,7 +107,6 @@ li {
     color: #6070ff;
     line-height: 20px;
     margin-left: 24px;
-    font-family: 'Poppins', sans-serif;
   }
 
   .dev-details {
@@ -114,9 +114,8 @@ li {
     line-height: 22px;
     margin-left: 24px;
     margin-top: 250px;
-    width: 330px;
+    width: 327px;
     text-align: justify;
-    font-family: 'Poppins', sans-serif;
     color: #344563;
   }
 
@@ -137,8 +136,297 @@ li {
     color: #505f79;
   }
 
+  .aboutsocial-icons i {
+    color: #505f79;
+  }
+
   .social-icons a:hover i {
     color: #6070ff;
     transition: all ease 0.3s;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    position: static;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 327px;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: calc(50% - 327px / 2);
+  }
+
+  .cardimage {
+    position: static;
+    width: 295px;
+    height: 220px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+  }
+
+  .cardheading,
+  h2 {
+    position: static;
+    color: #172b4d;
+    font-size: 32px;
+    line-height: 44px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 12px 0;
+    width: 295px;
+    height: 36px;
+  }
+
+  .canopyitemwrap {
+    display: flex;
+    width: 290px;
+    align-self: flex-start;
+  }
+
+  .cardcanopy {
+    position: static;
+    width: 55px;
+    height: 16px;
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .cardlistitem {
+    color: #7a869a;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
+  .dot {
+    font-size: 1.5rem;
+  }
+
+  .cardabout {
+    color: #344563;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 1px;
+  }
+
+  .cardtechnology {
+    display: flex;
+    width: 180px;
+    flex-direction: row;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-left: -45px;
+  }
+
+  .technology {
+    background: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: #6070ff;
+    text-align: center;
+    margin: 5px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .btnseeproject {
+    font-size: 17px;
+    line-height: 24px;
+    width: auto;
+    height: 48px;
+    align-self: flex-start;
+    padding: 12px;
+    margin-top: 1px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #396df2;
+    font-weight: 500;
+    background: #fff;
+  }
+
+  .btnseeproject:hover {
+    background-color: #84a0e6;
+    color: #fff;
+  }
+
+  .btnseeproject:active {
+    background-color: #2d66f6;
+    color: #fff;
+  }
+
+  .btnseeproject:disabled {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .about-myselfsection {
+    width: 375px;
+    height: 1150px;
+    margin-left: calc(50% - 327px / 2);
+  }
+
+  .about-myself {
+    width: 227px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    margin-top: 114px;
+    color: #172b4d;
+  }
+
+  .myself-content {
+    width: 327px;
+    text-align: justify;
+  }
+
+  .aboutconnect,
+  h3 {
+    font-size: 16px;
+    color: #6070ff;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .aboutsocial-icons a {
+    margin: 10px 05px;
+    font-size: 24px;
+    margin-left: -60px;
+  }
+
+  .aboutsocial-icons a:hover i {
+    color: #6070ff;
+    transition: all ease 0.3s;
+  }
+
+  .acordianwrapper {
+    margin-top: 35px;
+    width: 327px;
+  }
+
+  .accordion {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 327px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: 0.4s;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .accordion::after {
+    content: "\02C3";
+    color: black;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active::after {
+    content: "\02C5";
+  }
+
+  .panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #dff1e6;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+    justify-items: left;
+  }
+
+  .languagename {
+    width: 303px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #253858;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    margin-left: -40px;
+  }
+
+  .contactmecard {
+    height: 779px;
+    border-radius: 100px 0 0 0;
+    background-color: #6070ff;
+    background-size: 100%;
+    margin-top: 16px;
+  }
+
+  .contactme {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .contactmecontent {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+    margin: 24px 24px;
+  }
+
+  input {
+    height: 24px;
+    width: 300px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+  }
+
+  .textarea {
+    height: 170px;
+    padding: 15px 15px 38px;
+    align-items: flex-start;
+    width: 295px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    margin-left: 24px;
+  }
+
+  .btngetittouch {
+    margin-left: 24px;
   }
 }
