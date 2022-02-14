@@ -223,7 +223,7 @@ li {
   }
 
   .cardtechnology {
-    display: flex;
+    display: float;
     width: 180px;
     flex-direction: row;
     margin-top: 8px;
