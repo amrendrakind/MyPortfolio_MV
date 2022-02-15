@@ -302,12 +302,23 @@
         with it
       </div>
       <form>
-        <input type="text" id="fname" name="fname" value="Amrendra K" /><br />
         <input
           type="text"
+          id="fname"
+          name="fname"
+          minlength="1"
+          maxlength="30"
+          placeholder="Enter your name"
+          pattern="[A-Za-z]{1,30}"
+          required
+          
+        /><br />
+        <input
+          type="email"
           id="lname"
           name="lname"
-          value="amrendrak.ind@gmail.com"
+          placeholder="Enter your email id"
+          required
         /><br />
 
         <textarea
@@ -317,8 +328,11 @@
           cols="30"
           rows="10"
           placeholder="Write your message here"
+          maxlength="500"
+          pattern="[A-Za-z0-9]{1,500}"
+          required
         ></textarea>
-        <button type="button" class="btnseeproject btngetittouch">
+        <button type="submit" class="btnseeproject btngetittouch">
           Get It Touch
         </button>
       </form>
