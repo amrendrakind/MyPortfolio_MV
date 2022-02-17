@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 375px;
+  width: 380px;
   background: #fdfdfd;
   font-family: "Poppins", sans-serif;
 }
@@ -91,6 +91,7 @@ li {
     background-image: url("./images/header-shapes_mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    min-height: 620px;
   }
 
   .welcome {
