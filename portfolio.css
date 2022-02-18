@@ -1,17 +1,3 @@
-.nav__links,
-li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-  color: #08a;
-}
-
 @media only screen and (max-width: 32rem) {
   body {
     margin: 0;
@@ -43,6 +29,12 @@ li {
     list-style: none;
   }
 
+  .nav__links,
+  li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
   .nav__links {
     display: flex;
     flex-direction: column;
@@ -67,8 +59,6 @@ li {
   .welcome {
     font-size: 40px;
     margin-left: 24px;
-    margin-top: 50px;
-    height: 2px;
     width: 327px;
     color: #172b4d;
     padding-top: 5rem;
@@ -82,10 +72,10 @@ li {
   }
 
   .dev-details {
+    margin-top: 50px;
     font-size: 16px;
     line-height: 22px;
     margin-left: 24px;
-    margin-top: 100px;
     width: 327px;
     text-align: justify;
     color: #344563;
@@ -99,9 +89,9 @@ li {
   }
 
   .social-icons a {
-    margin: 10px 05px;
     font-size: 24px;
-    margin-left: -40px;
+    margin-left: -22px;
+    padding-right: 10px;
   }
 
   .social-icons i {
@@ -248,7 +238,6 @@ li {
   }
 
   .about-myselfsection {
-    width: 375px;
     height: 1150px;
     margin-left: calc(50% - 327px / 2);
   }
@@ -276,9 +265,10 @@ li {
   }
 
   .aboutsocial-icons a {
-    margin: 10px 05px;
+    width: 200px;
     font-size: 24px;
-    margin-left: -60px;
+    margin-left: -50px;
+    padding-right: 40px;
   }
 
   .aboutsocial-icons a:hover i {
