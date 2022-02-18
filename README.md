@@ -15,9 +15,9 @@
 [Live Demo Link]amrendrakind.github.io/myportfolio_MV)
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Amrendra K**
 
 - GitHub: [@githubhandle](https://github.com/amrendrakind)
 - Twitter: [@twitterhandle](https://twitter.com/amrendrak_)
