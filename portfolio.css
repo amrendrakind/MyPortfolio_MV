@@ -396,6 +396,10 @@
     margin-top: 2rem;
   }
 
+  form {
+    margin-bottom: 60px;
+  }
+
   .bottomline {
     display: flex;
     justify-content: center;
