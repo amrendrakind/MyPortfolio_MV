@@ -249,9 +249,11 @@
     display: flex;
     flex-direction: column;
     padding-left: 142px;
+    padding-top: 50px;
   }
 
   .about-myself {
+    width: 250px;
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
