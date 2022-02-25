@@ -46,12 +46,16 @@
     align-items: center;
   }
 
-  .nav__links .line {
+  .line {
     height: 0.2rem;
     width: 0.1rem;
     background-color: #6070ff;
     margin: 0.2rem;
   }
+
+.testing {
+  display: none;
+}
 
   .backgroundimage {
     background-image: url("./images/header-shapes_mobile.png");
@@ -69,7 +73,7 @@
     font-weight: bold;
     width: 327px;
     color: #172b4d;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .letsconnect {
@@ -79,7 +83,6 @@
   }
 
   .welcome-para-1 {
-    margin-top: 50px;
     font-size: 16px;
     line-height: 22px;
     width: 327px;
