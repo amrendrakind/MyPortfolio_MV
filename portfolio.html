@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <style>
-      .dev-details {
+      .welcome-para-1 {
         font-family: "Poppins";
       }
     </style>
@@ -40,6 +40,7 @@
           </ul>
         </nav>
       </header>
+
       <div class="backgroundimage">
         <div class="content">
           <div class="welcometext">
@@ -91,7 +92,11 @@
     </section>
     <section class="test">
       <div class="card">
-        <img class="cardimage" src="./images/Nature.png" alt="Natureimage" />
+        <picture class="cardimage">
+          <source srcset="./images/Nature.png" media="(min-width: 991px)" />
+          <img src="./images/blog_drbl_4x.png" alt="Images" />
+        </picture>
+
         <div class="carditemwrapper">
           <div class="cardheading">
             <h2>Tonic</h2>
@@ -118,6 +123,13 @@
         </div>
       </div>
       <div class="card">
+        <picture class="cardimage swap">
+          <source
+            srcset="./images/ProfessionalArtPrinting.png"
+            media="(min-width: 991px)"
+          />
+          <img src="./images/Snapshoot_Portfolio_MultiPost.png" alt="Images" />
+        </picture>
         <div class="carditemwrapper">
           <div class="cardheading">
             <h2>Multi-Post Stories</h2>
@@ -141,18 +153,16 @@
           </ul>
           <button type="button" class="btnseeproject">See Project</button>
         </div>
-        <img
-          class="cardimage"
-          src="./images/ProfessionalArtPrinting.png"
-          alt="Artimage"
-        />
       </div>
       <div class="card">
-        <img
-          class="cardimage"
-          src="./images/Facebook360.png"
-          alt="facebookimage"
-        />
+        <picture class="cardimage">
+          <source
+            srcset="./images/Facebook360.png"
+            media="(min-width: 991px)"
+          />
+          <img src="./images/Snapshoot_Portfolio_Yoga.png" alt="Images" />
+        </picture>
+
         <div class="carditemwrapper">
           <div class="cardheading">
             <h2>Facebook 360</h2>
@@ -177,6 +187,16 @@
         </div>
       </div>
       <div class="card">
+        <picture class="cardimage swap">
+          <source
+            srcset="./images/availability.png"
+            media="(min-width: 991px)"
+          />
+          <img
+            src="./images/Snapshoot_Portfolio_MultiPostStories.png"
+            alt="Images"
+          />
+        </picture>
         <div class="carditemwrapper">
           <div class="cardheading">
             <h2>Uber Navigation</h2>
@@ -199,11 +219,6 @@
           </ul>
           <button type="button" class="btnseeproject">See Project</button>
         </div>
-        <img
-          class="cardimage"
-          src="./images/availability.png"
-          alt="multipoststoryimage"
-        />
       </div>
     </section>
 

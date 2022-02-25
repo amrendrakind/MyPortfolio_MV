@@ -1,4 +1,4 @@
-@media only screen and (min-width: 33rem) {
+@media only screen and (min-width: 992px) {
   body {
     max-width: 1440px;
     margin: auto;
@@ -41,6 +41,10 @@
     flex-direction: row;
     margin-top: 0.5rem;
     align-items: center;
+  }
+
+  .line {
+    color: #344563;
   }
 
   .landingpagecard {
@@ -124,6 +128,10 @@
     padding-top: 24px;
     padding-bottom: 24px;
     padding-right: 22px;
+  }
+
+  .swap {
+    order: 1;
   }
 
   .carditemwrapper {
@@ -288,7 +296,7 @@
 
   .accordion {
     background-color: white;
-    color: #000;
+    color: #344563;
     cursor: pointer;
     padding: 18px;
     width: 650px;
@@ -318,6 +326,7 @@
 
   .panel {
     background-color: white;
+    color: #344563;
     width: 650px;
     max-height: 0;
     overflow: hidden;
