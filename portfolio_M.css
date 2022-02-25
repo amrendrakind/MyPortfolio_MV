@@ -1,4 +1,4 @@
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   body {
     margin: 0;
     padding: 0;
@@ -375,7 +375,7 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: calc(50% - 327px / 2);
   }
 
   .textarea {
@@ -386,11 +386,11 @@
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
-    margin-left: 24px;
+    margin-left: calc(50% - 327px / 2);
   }
 
   .btngetittouch {
-    margin-left: 24px;
+    margin-left: calc(50% - 327px / 2);
     margin-top: 2rem;
   }
 

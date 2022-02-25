@@ -48,6 +48,7 @@
   }
 
   .landingpagecard {
+    width: 1440px;
     min-height: 916px;
     border-radius: 0 0 0 100px;
     background-color: #fff;
