@@ -21,10 +21,6 @@
     padding: 20px 5%;
   }
 
-  .line {
-    color: #344563;
-  }
-
   .mylogo {
     font-size: 20px;
     font-weight: bold;
@@ -53,9 +49,9 @@
     margin: 0.2rem;
   }
 
-.testing {
-  display: none;
-}
+  .testing {
+    display: none;
+  }
 
   .backgroundimage {
     background-image: url("./images/header-shapes_mobile.png");
