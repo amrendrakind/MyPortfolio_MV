@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://amrendrakind.github.io/MyPortfolio_MV/)
+[Live Demo Link](https://amrendrakind.github.io/MyPortfolio_MV)
 
 
 ## Author
