@@ -2,7 +2,7 @@
 
 # Project Name
 
-> My Portfolio. Find me at https://amrendrakind.github.io/MyPortfolio_MV/
+> My Portfolio. You can find me at https://amrendrakind.github.io/MyPortfolio_MV/
 
 
 ## Built With
@@ -10,7 +10,7 @@
 - HTML
 - CSS
 
-## Live Demo (if available)
+## Live Demo (Link for My portfolio)
 
 [Live Demo Link](https://amrendrakind.github.io/MyPortfolio_MV)
 
