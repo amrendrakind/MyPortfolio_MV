@@ -2,7 +2,7 @@
 
 # Project Name
 
-> My Portfolio. Fiind me at https://amrendrakind.github.io/MyPortfolio_MV/
+> My Portfolio. Find me at https://amrendrakind.github.io/MyPortfolio_MV/
 
 
 ## Built With
@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](amrendrakind.github.io/myportfolio_MV)
+[Live Demo Link](https://amrendrakind.github.io/MyPortfolio_MV)
 
 
 ## Author
