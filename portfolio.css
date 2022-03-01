@@ -447,7 +447,7 @@
   .landingpagecard {
     border-radius: 0 0 0 60px;
     background-color: #fff;
-    height: 718px;
+    height: 780px
   }
 
   li,
@@ -501,7 +501,7 @@
     background-image: url("./images/header-shapes_mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 620px;
+    min-height: 750px
   }
 
   .content {
