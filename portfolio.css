@@ -317,7 +317,8 @@
 
   .active,
   .accordion:hover {
-    background-color: rgb(119, 216, 203);
+    background-color: #1414ff;
+    color: #fff;
   }
 
   .accordion::after {
@@ -434,7 +435,6 @@
     margin-top: 1rem;
     letter-spacing: 0.03em;
   }
-
 }
 
 @media only screen and (max-width: 991px) {
@@ -754,7 +754,7 @@
 
   .active,
   .accordion:hover {
-    background-color: rgb(119, 216, 203);
+    background-color: #1414ff;
   }
 
   .accordion::after {
