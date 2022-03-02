@@ -224,7 +224,7 @@
   }
 
   .btnseeproject:active {
-    background-color: #2d66f6;
+    background-color: #04109b;
     color: #fff;
   }
 
@@ -434,6 +434,7 @@
     margin-top: 1rem;
     letter-spacing: 0.03em;
   }
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -670,7 +671,7 @@
   }
 
   .btnseeproject:active {
-    background-color: #2d66f6;
+    background-color: #04109b;
     color: #fff;
   }
 
