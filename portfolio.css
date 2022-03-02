@@ -219,7 +219,7 @@
   }
 
   .btnseeproject:hover {
-    background-color: #84a0e6;
+    background-color: #0019fa;
     color: #fff;
   }
 
@@ -518,7 +518,7 @@
 
   .letsconnect {
     font-size: 20px;
-    color: #6070ff;
+    color: #051eff;
     line-height: 20px;
   }
 
@@ -641,7 +641,7 @@
     background: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
-    color: #6070ff;
+    color: #0019fa;
     text-align: center;
     margin: 5px;
     font-size: 12px;
@@ -665,7 +665,7 @@
   }
 
   .btnseeproject:hover {
-    background-color: #84a0e6;
+    background-color: #0019fa;
     color: #fff;
   }
 
@@ -707,7 +707,7 @@
   .aboutconnect,
   h3 {
     font-size: 16px;
-    color: #6070ff;
+    color: #1414ff;
     line-height: 20px;
     font-weight: 500;
   }
