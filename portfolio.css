@@ -219,12 +219,12 @@
   }
 
   .btnseeproject:hover {
-    background-color: #0019fa;
+    background-color: #000970;
     color: #fff;
   }
 
   .btnseeproject:active {
-    background-color: #04109b;
+    background-color: #0019fa;
     color: #fff;
   }
 
@@ -666,12 +666,12 @@
   }
 
   .btnseeproject:hover {
-    background-color: #0019fa;
+    background-color: #000970;
     color: #fff;
   }
 
   .btnseeproject:active {
-    background-color: #04109b;
+    background-color: #0019fa;
     color: #fff;
   }
 
