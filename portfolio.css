@@ -317,7 +317,7 @@
 
   .active,
   .accordion:hover {
-    background-color: rgb(255, 254, 254);
+    background-color: rgb(119, 216, 203);
   }
 
   .accordion::after {
@@ -753,7 +753,7 @@
 
   .active,
   .accordion:hover {
-    background-color: rgb(255, 254, 254);
+    background-color: rgb(119, 216, 203);
   }
 
   .accordion::after {
