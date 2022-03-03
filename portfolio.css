@@ -68,7 +68,7 @@
     padding-top: 200px;
   }
 
-  .welcometext {
+  .welcometext h1 {
     letter-spacing: 0.37px;
     color: #091e42;
     font-size: 48px;
@@ -85,7 +85,7 @@
   }
 
   .letsconnect {
-    color: #7f8cff;
+    color: #051eff;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -194,7 +194,7 @@
     background: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
-    color: #6070ff;
+    color: #0019fa;
     text-align: center;
     margin: 5px;
     font-size: 12px;
@@ -219,12 +219,12 @@
   }
 
   .btnseeproject:hover {
-    background-color: #84a0e6;
+    background-color: #000970;
     color: #fff;
   }
 
   .btnseeproject:active {
-    background-color: #2d66f6;
+    background-color: #0019fa;
     color: #fff;
   }
 
@@ -274,7 +274,7 @@
   .aboutconnect,
   h3 {
     font-size: 16px;
-    color: #6070ff;
+    color: #1414ff;
     line-height: 24px;
     font-weight: 500;
   }
@@ -317,7 +317,8 @@
 
   .active,
   .accordion:hover {
-    background-color: rgb(255, 254, 254);
+    background-color: #1414ff;
+    color: #fff;
   }
 
   .accordion::after {
@@ -447,7 +448,7 @@
   .landingpagecard {
     border-radius: 0 0 0 60px;
     background-color: #fff;
-    height: 718px;
+    height: 780px;
   }
 
   li,
@@ -501,14 +502,14 @@
     background-image: url("./images/header-shapes_mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 620px;
+    min-height: 750px;
   }
 
   .content {
     margin-left: calc(50% - 327px / 2);
   }
 
-  .welcometext {
+  .welcometext h1 {
     font-size: 40px;
     font-weight: bold;
     width: 327px;
@@ -518,7 +519,7 @@
 
   .letsconnect {
     font-size: 20px;
-    color: #6070ff;
+    color: #051eff;
     line-height: 20px;
   }
 
@@ -641,7 +642,7 @@
     background: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
-    color: #6070ff;
+    color: #0019fa;
     text-align: center;
     margin: 5px;
     font-size: 12px;
@@ -665,12 +666,12 @@
   }
 
   .btnseeproject:hover {
-    background-color: #84a0e6;
+    background-color: #000970;
     color: #fff;
   }
 
   .btnseeproject:active {
-    background-color: #2d66f6;
+    background-color: #0019fa;
     color: #fff;
   }
 
@@ -707,7 +708,7 @@
   .aboutconnect,
   h3 {
     font-size: 16px;
-    color: #6070ff;
+    color: #1414ff;
     line-height: 20px;
     font-weight: 500;
   }
@@ -753,7 +754,7 @@
 
   .active,
   .accordion:hover {
-    background-color: rgb(255, 254, 254);
+    background-color: #1414ff;
   }
 
   .accordion::after {
