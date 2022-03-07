@@ -30,15 +30,21 @@
   <body>
     <section class="landingpagecard">
       <header>
-        <nav class="topnav">
-          <a class="mylogo" href="#mylogo">My Logo</a>
-          <ul class="nav__links">
-            <li class="line">
-              <a class="testing" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="line"><a class="testing" href="#about">About</a></li>
-            <li class="line"><a class="testing" href="#contact">Contact</a></li>
-          </ul>
+        <nav class="topnav" id="nav-bar">
+          <a class="mylogo" id="logo-icon" href="#mylogo">My Logo</a>
+          <div id="menu-list">
+          
+            <ul class="nav__links testing"  id="menu-item">
+              <li class="cancel"><a href=""><img src="./images/Icon-Cancel.png" alt=""></a></li>
+              <li class="list-items">
+                <a class="list-items"  href="#portfolio">Portfolio</a>
+              </li>
+              <li class="list-items"><a class="" href="#about">About</a></li>
+              <li class="list-items"><a class="" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div id="menu-icon"><img src="./images/Icon-Menu.png" alt=""></div>
+          
         </nav>
       </header>
 
@@ -374,5 +380,6 @@
         </form>
       </div>
     </section>
+    <script src="portfolio.js"></script>
   </body>
 </html>
