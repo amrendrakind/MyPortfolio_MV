@@ -22,7 +22,6 @@ cancel.addEventListener('click', () => {
   document.getElementById('logo-icon').style.display = 'flex';
   document.getElementById('menu-icon').style.display = 'flex';
 });
-// const listItem = document.querySelectorAll('.list-items');
 const listItem = document.querySelectorAll('a');
 
 for (let i = 0; i < listItem.length; i += 1) {
