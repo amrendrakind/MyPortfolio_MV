@@ -435,9 +435,34 @@
     margin-top: 1rem;
     letter-spacing: 0.03em;
   }
+
+  .cancel,
+  .menu-icon,
+  .menu-list-item {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  .menu-list-item {
+    background: url("./images/Overlay.png");
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: -8px;
+    left: -11px;
+  }
+
+  .cancel {
+    align-self: flex-end;
+    margin-right: 10px;
+  }
+
+  .list-items {
+    display: block;
+    align-self: flex-start;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -454,8 +479,10 @@
   li,
   a {
     font-weight: 500;
-    font-size: 16px;
-    color: black;
+    font-size: 32px;
+    line-height: 44px;
+    align-items: center;
+    color: #fff;
     text-decoration: none;
   }
 

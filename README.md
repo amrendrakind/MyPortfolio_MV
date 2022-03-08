@@ -9,6 +9,7 @@
 
 - HTML
 - CSS
+- JavaScripts
 
 ## Live Demo (Link for My portfolio)
 
