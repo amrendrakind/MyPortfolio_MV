@@ -4,8 +4,10 @@ humberger.addEventListener('click', () => {
   document.getElementById('logo-icon').style.display = 'none';
   document.getElementById('menu-icon').style.display = 'none';
   document.getElementById('menu-item').style.display = 'flex';
+  // const backgroundimageBlur = document.querySelector('.backgroundimage');
 
   navLinks.classList.add('menu-list-item');
+  // backgroundimageBlur.classList.add('blur');
   const listItem = document.querySelectorAll('a');
 
   for (let i = 1; i < listItem.length; i += 1) {
@@ -35,37 +37,45 @@ for (let i = 0; i < listItem.length; i += 1) {
 
 const btnSeeProject = document.querySelectorAll('.btnseeproject');
 const card = document.querySelectorAll('.card');
-// card.forEach(p => console.log(p));
-// var cardImage = card[2].children[0];
-// console.log(cardImage);
-// // var image1 = document.write(cardImage);
-// for (let i = 0; i < card.length; i += 1) {
-//   // console.log(card[i].children.length);
-//   // let card1 = card[0];
-//   var cardImage1 = card[i].children[0];
-//   // console.log(cardImage1);
-//   for (let j = 0; j < card[0].children.length; j += 1) {
-//     // console.log(card[i].children[0]);
-//   }
-// }
 
 for (let m = 0; m < btnSeeProject.length - 2; m += 1) {
   btnSeeProject[m].addEventListener('click', () => {
+    // eslint-disable-next-line no-use-before-define
     CardDisplay(m);
   });
 }
 
 function CardDisplay(indexValue) {
+  const portfolioHeading = card[indexValue].children[1].children[0];
+  const canopyItem = card[indexValue].children[1].children[1];
   const cardImage = card[indexValue].children[0];
+  const technology = card[indexValue].children[1].children[3];
+
   const project = [{
     closePopup: './images/close2.png',
+    portfolioHeading: `${portfolioHeading.innerHTML}`,
     projectImage: `${cardImage.innerHTML}`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+    + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
+    + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    seeLive: './images/seeLive.png',
+    seeSource: './images/seeSource.png',
+    liveProjectLink: 'https://amrendrakind.github.io/MyPortfolio_MV/',
+    SourceCodeLink: 'https://github.com/amrendrakind/MyPortfolio_MV',
   }];
+
   const htmlMarkup = `
-  <img class="close-icon" src=${project[0].closePopup}>
-  <br>
-  ${project[0].projectImage}
+  <div class = "popup-heading-wrap">
+    <div class="popup-heading">    ${portfolioHeading.innerHTML}</div>
+    <img class="close-icon" src=${project[0].closePopup}>
+  </div>
+  <div class="popup-canopy" >${canopyItem.innerHTML}</div>
+  ${cardImage.innerHTML}
+  <div class = "description" >${project[0].description}</div>
+  <div class="popup-technology" >${technology.innerHTML}</div>
+
   `;
+
   const section = document.createElement('section');
   section.className = 'default';
   document.body.appendChild(section);
@@ -73,6 +83,7 @@ function CardDisplay(indexValue) {
   const closeIcon = document.querySelector('.close-icon');
   function display() {
     section.classList.toggle('popup');
+    window.location.reload();
   }
   closeIcon.addEventListener('click', display);
 
