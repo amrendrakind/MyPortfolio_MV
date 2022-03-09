@@ -1,19 +1,22 @@
 @media only screen and (min-width: 992px) {
-  .default {
+  .default1 {
     display: none;
   }
 
   .popup {
-    padding: 5px;
-    border: 5px solid #1a2236;
-    display: block;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #dfe1e6;
+    top: 60px;
     background: white;
-    max-height: 100%;
-    z-index: 99;
     box-sizing: border-box;
-    width: 50vw;
+    width: 1156px;
+    min-height: 1160px;
+    margin-left: calc(50% - 1156px / 2);
+    border-radius: 16px;
   }
 
   .popup-heading-wrap {
@@ -21,22 +24,53 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 10px;
   }
 
   .popup-heading {
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
     margin-top: -10px;
+    font-size: 25px;
+    margin-right: -20px;
   }
 
   .close-icon {
-    float: right;
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  .popup-image {
+    width: 544px;
   }
 
   .popup-canopy {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+    padding-left: 8px;
+  }
+
+  .description {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin: 12px 0;
+  }
+
+  .popup-technology {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+
+  .popup-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 35px;
   }
 
   body {

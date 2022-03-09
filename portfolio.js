@@ -38,7 +38,7 @@ for (let i = 0; i < listItem.length; i += 1) {
 const btnSeeProject = document.querySelectorAll('.btnseeproject');
 const card = document.querySelectorAll('.card');
 const section = document.createElement('section');
-section.className = 'default';
+section.className = 'default1';
 document.body.appendChild(section);
 
 for (let m = 0; m < btnSeeProject.length - 2; m += 1) {
@@ -73,7 +73,10 @@ function CardDisplay(indexValue) {
     <img class="close-icon" src=${project[0].closePopup}>
   </div>
   <div class="popup-canopy" >${canopyItem.innerHTML}</div>
-  ${cardImage.innerHTML}
+  <picture class="">
+    ${cardImage.innerHTML}
+  </picture>
+  
   <div class = "description" >${project[0].description}</div>
   <div class="popup-technology" >${technology.innerHTML}</div>
   <div class="popup-button">
@@ -87,12 +90,18 @@ function CardDisplay(indexValue) {
     </button>
   </div>
   `;
+
   section.innerHTML = htmlMarkup;
+
+  const default1 = document.querySelector('.default1');
+  const popupImage = default1.querySelector('.popup-image');
+  popupImage.style.height = '1160px';
+  popupImage.style.width = '1150px';
   const closeIcon = document.querySelector('.close-icon');
   section.classList.toggle('popup');
-
   function display() {
     section.classList.toggle('popup');
+    popupImage.style.width = '544px';
   }
   closeIcon.addEventListener('click', display);
 }
