@@ -37,6 +37,9 @@ for (let i = 0; i < listItem.length; i += 1) {
 
 const btnSeeProject = document.querySelectorAll('.btnseeproject');
 const card = document.querySelectorAll('.card');
+const section = document.createElement('section');
+section.className = 'default';
+document.body.appendChild(section);
 
 for (let m = 0; m < btnSeeProject.length - 2; m += 1) {
   btnSeeProject[m].addEventListener('click', () => {
@@ -84,17 +87,12 @@ function CardDisplay(indexValue) {
     </button>
   </div>
   `;
-
-  const section = document.createElement('section');
-  section.className = 'default';
-  document.body.appendChild(section);
   section.innerHTML = htmlMarkup;
   const closeIcon = document.querySelector('.close-icon');
+  section.classList.toggle('popup');
+
   function display() {
     section.classList.toggle('popup');
-    window.location.reload();
   }
   closeIcon.addEventListener('click', display);
-
-  section.classList.toggle('popup');
 }
