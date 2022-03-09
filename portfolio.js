@@ -73,16 +73,16 @@ function CardDisplay(indexValue) {
   ${cardImage.innerHTML}
   <div class = "description" >${project[0].description}</div>
   <div class="popup-technology" >${technology.innerHTML}</div>
-<div class="popup-button">
-<button class="popup-button-liveSource">
-See Live
-<img src=${project[0].seeLive} alt="">
-</button>
-<button class="popup-button-liveSource">
-See Source
-<img src=${project[0].seeSource} alt="">
-</button>
-</div>
+  <div class="popup-button">
+    <button class="popup-button-liveSource">
+      See Live
+      <img src=${project[0].seeLive} alt="">
+    </button>
+    <button class="popup-button-liveSource">
+      See Source
+      <img src=${project[0].seeSource} alt="">
+    </button>
+  </div>
   `;
 
   const section = document.createElement('section');
