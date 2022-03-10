@@ -7,7 +7,6 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding: 15px;
     border: 1px solid #dfe1e6;
     top: 60px;
@@ -29,22 +28,19 @@
   }
 
   .popup-heading {
-    display: flex;
-
+    width: 1160px;
     font-family: "Poppins", sans-serif;
     margin-top: -10px;
-    font-size: 25px;
-    margin-right: -20px;
+    margin-left: -10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
   }
 
   .close-icon {
     display: flex;
-    align-self: flex-end;
-    /* margin-right: 20px; */
-  }
-
-  .popup-image {
-    width: 544px;
+    margin-top: 50px;
   }
 
   .popup-canopy {
@@ -55,6 +51,12 @@
   }
 
   .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 678px;
+    /* height: 382px; */
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     line-height: 24px;
@@ -74,6 +76,18 @@
     flex-direction: row;
     gap: 10px;
     padding-top: 35px;
+    background-color: #fff;
+  }
+
+  .desc-tech-btn {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tech-btn {
+    display: flex;
+    flex-direction: column;
   }
 
   body {

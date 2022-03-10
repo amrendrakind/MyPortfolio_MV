@@ -73,35 +73,42 @@ function CardDisplay(indexValue) {
     <img class="close-icon" src=${project[0].closePopup}>
   </div>
   <div class="popup-canopy" >${canopyItem.innerHTML}</div>
-  <picture class="">
+  <picture class="popup-cardimage">
     ${cardImage.innerHTML}
   </picture>
   
-  <div class = "description" >${project[0].description}</div>
-  <div class="popup-technology" >${technology.innerHTML}</div>
-  <div class="popup-button">
-    <button class="popup-button-liveSource">
-      See Live
-      <img src=${project[0].seeLive} alt="">
-    </button>
-    <button class="popup-button-liveSource">
-      See Source
-      <img src=${project[0].seeSource} alt="">
-    </button>
-  </div>
+<div class = "desc-tech-btn">
+    <div class = "description" >${project[0].description}</div>
+    <div class = "tech-btn">
+      <div class="popup-technology" >${technology.innerHTML}</div>
+      <div class="popup-button">
+        <button class="popup-button-liveSource">
+          See Live
+          <img src=${project[0].seeLive} alt="">
+        </button>
+        <button class="popup-button-liveSource">
+          See Source
+          <img src=${project[0].seeSource} alt="">
+        </button>
+      </div>
+    </div>
+</div>
   `;
 
   section.innerHTML = htmlMarkup;
 
   const default1 = document.querySelector('.default1');
-  const popupImage = default1.querySelector('.popup-image');
-  popupImage.style.height = '1160px';
-  popupImage.style.width = '1150px';
+  const mediaQuery = window.matchMedia('(min-width: 992px)');
+  if (mediaQuery.matches) {
+    const popupImage = default1.querySelector('.popup-image');
+    popupImage.style.height = '486px';
+    popupImage.style.width = '1108px';
+  }
+
   const closeIcon = document.querySelector('.close-icon');
   section.classList.toggle('popup');
   function display() {
     section.classList.toggle('popup');
-    popupImage.style.width = '544px';
   }
   closeIcon.addEventListener('click', display);
 }
