@@ -60,9 +60,9 @@ function CardDisplay(indexValue) {
   const project = [{
     closePopup: './images/close2.png',
     portfolioHeading: `${portfolioHeading.innerHTML}`,
-    projectImage: `${cardImage.innerHTML}`,
     canopyItem: `${canopyItem.innerHTML}`,
     cardImage: `${cardImage.innerHTML}`,
+    technology: `${technology.innerHTML}`,
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
     + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
     + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -82,7 +82,7 @@ function CardDisplay(indexValue) {
   <div class = "desc-tech-btn">
     <div class = "description" >${project[0].description}</div>
     <div class = "tech-btn">
-      <div class="popup-technology" >${technology.innerHTML}</div>
+      <div class="popup-technology" >${project[0].technology}</div>
       <div class="popup-button">
         <button class="popup-button-liveSource">
           See Live
@@ -100,6 +100,7 @@ function CardDisplay(indexValue) {
   section.innerHTML = htmlMarkup;
 
   const default1 = document.querySelector('.default1');
+  // console.log(default1);
   const mediaQuery = window.matchMedia('(min-width: 992px)');
   if (mediaQuery.matches) {
     const popupImage = default1.querySelector('.popup-image');
@@ -121,6 +122,7 @@ function CardDisplay(indexValue) {
     for (let i = 0; i < blurPage.length; i += 1) {
       blurPage[i].style.filter = 'blur(0)';
     }
+    default1.innerHTML = '';
   }
   closeIcon.addEventListener('click', display);
 }
