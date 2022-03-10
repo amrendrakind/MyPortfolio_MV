@@ -114,9 +114,9 @@
     filter: blur(0);
   }
 
-.invalidError {
-  margin-left: 33%;
-}
+  .invalidError {
+    margin-left: 33%;
+  }
 
   body {
     max-width: 1440px;
@@ -1103,6 +1103,7 @@
     background: #0d151e;
     border-radius: 10px;
   }
+
   .invalidError {
     margin-left: calc(50% - 327px / 2);
   }
