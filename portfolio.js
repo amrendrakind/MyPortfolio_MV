@@ -1,15 +1,14 @@
 const humberger = document.querySelector('#menu-icon');
+
 humberger.addEventListener('click', () => {
   const navLinks = document.getElementById('menu-item');
   document.getElementById('logo-icon').style.display = 'none';
   document.getElementById('menu-icon').style.display = 'none';
   document.getElementById('menu-item').style.display = 'flex';
 
-  // const blurPage = document.querySelector('.menu-mobile-bg');
-  // console.log(blurPage);
-
   navLinks.classList.add('menu-list-item');
-  // backgroundimageBlur.classList.add('blur');
+  const scrollStop = document.querySelector('body');
+  scrollStop.style.overflow = 'hidden';
   const listItem = document.querySelectorAll('a');
 
   for (let i = 1; i < listItem.length; i += 1) {
@@ -25,6 +24,8 @@ cancel.addEventListener('click', () => {
   document.getElementById('menu-item').style.display = 'none';
   document.getElementById('logo-icon').style.display = 'flex';
   document.getElementById('menu-icon').style.display = 'flex';
+  const scrollStop = document.querySelector('body');
+  scrollStop.style.overflow = 'scroll';
 });
 const listItem = document.querySelectorAll('a');
 
@@ -60,6 +61,8 @@ function CardDisplay(indexValue) {
     closePopup: './images/close2.png',
     portfolioHeading: `${portfolioHeading.innerHTML}`,
     projectImage: `${cardImage.innerHTML}`,
+    canopyItem: `${canopyItem.innerHTML}`,
+    cardImage: `${cardImage.innerHTML}`,
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
     + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
     + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -71,14 +74,11 @@ function CardDisplay(indexValue) {
 
   const htmlMarkup = `
   <div class = "popup-heading-wrap">
-    <div class="popup-heading">    ${portfolioHeading.innerHTML}</div>
+    <div class="popup-heading">    ${project[0].portfolioHeading}</div>
     <img class="close-icon" src=${project[0].closePopup}>
   </div>
-  <div class="popup-canopy" >${canopyItem.innerHTML}</div>
-  <picture class="popup-cardimage">
-    ${cardImage.innerHTML}
-  </picture>
-  
+  <div class="popup-canopy" >${project[0].canopyItem}</div>
+  <picture class="popup-cardimage">  ${project[0].cardImage} </picture>
   <div class = "desc-tech-btn">
     <div class = "description" >${project[0].description}</div>
     <div class = "tech-btn">
@@ -91,7 +91,6 @@ function CardDisplay(indexValue) {
         <button class="popup-button-liveSource">
           See Source
           <img src=${project[0].seeSource} alt="">
-
         </button>
       </div>
     </div>
@@ -108,7 +107,6 @@ function CardDisplay(indexValue) {
     popupImage.style.width = '100%';
   }
   const blurPage = document.querySelectorAll('.blur');
-  // console.log(blurPage);
 
   for (let i = 0; i < blurPage.length; i += 1) {
     blurPage[i].style.filter = 'blur(10px)';
@@ -119,9 +117,9 @@ function CardDisplay(indexValue) {
   section.classList.toggle('popup');
   function display() {
     section.classList.toggle('popup');
+    scrollStop.style.overflow = 'scroll';
     for (let i = 0; i < blurPage.length; i += 1) {
       blurPage[i].style.filter = 'blur(0)';
-      scrollStop.style.overflow = 'scroll';
     }
   }
   closeIcon.addEventListener('click', display);

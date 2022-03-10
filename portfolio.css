@@ -13,7 +13,7 @@
     background: white;
     box-sizing: border-box;
     min-width: 50%;
-    min-height: 1160px;
+    min-height: 1163px;
     max-height: 100%;
     margin-left: 6%;
     margin-right: 8%;
@@ -654,6 +654,8 @@
     position: fixed;
     top: -8px;
     left: -11px;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
   }
 
   .cancel {
@@ -687,6 +689,7 @@
     align-items: center;
     color: #fff;
     text-decoration: none;
+    z-index: 99;
   }
 
   nav {
@@ -745,6 +748,7 @@
     width: 327px;
     color: #172b4d;
     padding-top: 2rem;
+    z-index: 0;
   }
 
   .letsconnect {
