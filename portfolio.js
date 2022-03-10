@@ -124,3 +124,20 @@ function CardDisplay(indexValue) {
   }
   closeIcon.addEventListener('click', display);
 }
+
+// Validation for Contact Form
+
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#mail');
+const invalidError = document.querySelector('#invalidError');
+
+form.addEventListener('submit', (e) => {
+  const emailText = email.value;
+  if (emailText !== emailText.toLowerCase()) {
+    e.preventDefault();
+    invalidError.style.color = 'red';
+    invalidError.textContent = 'Please enter your email in lowercase';
+  } else {
+    invalidError.textContent = '';
+  }
+});
