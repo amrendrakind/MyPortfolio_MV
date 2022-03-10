@@ -141,5 +141,3 @@ form.addEventListener('submit', (e) => {
     invalidError.textContent = '';
   }
 });
-
-// Local Storage
