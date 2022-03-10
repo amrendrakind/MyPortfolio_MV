@@ -18,7 +18,6 @@
     margin-left: 6%;
     margin-right: 8%;
     border-radius: 16px;
-    overflow: scroll;
   }
 
   .popup-heading-wrap {
@@ -574,7 +573,6 @@
     position: fixed;
     margin-left: calc(51% - 343px / 2);
     border-radius: 16px;
-    overflow: scroll;
   }
 
   .popup-heading-wrap {
