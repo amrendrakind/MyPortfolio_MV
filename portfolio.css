@@ -4,17 +4,19 @@
   }
 
   .popup {
-    position: fixed;
     display: flex;
+    position: fixed;
     flex-direction: column;
     padding: 15px;
     border: 1px solid #dfe1e6;
     top: 60px;
     background: white;
     box-sizing: border-box;
-    width: 1156px;
+    min-width: 50%;
     min-height: 1160px;
-    margin-left: calc(50% - 1156px / 2);
+    max-height: 100%;
+    margin-left: 6%;
+    margin-right: 8%;
     border-radius: 16px;
   }
 
@@ -54,9 +56,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    width: 678px;
-    /* height: 382px; */
+    padding: 0;
+    width: 778px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     line-height: 24px;
@@ -79,15 +80,38 @@
     background-color: #fff;
   }
 
+  .popup-button-liveSource {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    padding: 12px 22px;
+    width: 142px;
+    height: 40px;
+    left: 9px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
   .desc-tech-btn {
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
+    gap: 24px;
   }
 
   .tech-btn {
     display: flex;
     flex-direction: column;
+  }
+
+  .blur {
+    filter: blur(0);
   }
 
   body {
@@ -531,7 +555,7 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .default {
+  .default1 {
     display: none;
   }
 
@@ -547,7 +571,7 @@
     box-sizing: border-box;
     width: 343px;
     position: fixed;
-    margin-left: calc(52% - 343px / 2);
+    margin-left: calc(51% - 343px / 2);
     border-radius: 16px;
   }
 
@@ -619,18 +643,8 @@
     line-height: 15px;
   }
 
-  .menu-mobile-bg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(96, 112, 255, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 1;
-  }
-
   .blur {
-    filter: blur(8px);
+    filter: blur(0);
   }
 
   .menu-list-item {
@@ -640,7 +654,6 @@
     position: fixed;
     top: -8px;
     left: -11px;
-    mix-blend-mode: normal;
   }
 
   .cancel {

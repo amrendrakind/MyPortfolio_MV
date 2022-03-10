@@ -4,7 +4,9 @@ humberger.addEventListener('click', () => {
   document.getElementById('logo-icon').style.display = 'none';
   document.getElementById('menu-icon').style.display = 'none';
   document.getElementById('menu-item').style.display = 'flex';
-  // const backgroundimageBlur = document.querySelector('.backgroundimage');
+
+  // const blurPage = document.querySelector('.menu-mobile-bg');
+  // console.log(blurPage);
 
   navLinks.classList.add('menu-list-item');
   // backgroundimageBlur.classList.add('blur');
@@ -77,7 +79,7 @@ function CardDisplay(indexValue) {
     ${cardImage.innerHTML}
   </picture>
   
-<div class = "desc-tech-btn">
+  <div class = "desc-tech-btn">
     <div class = "description" >${project[0].description}</div>
     <div class = "tech-btn">
       <div class="popup-technology" >${technology.innerHTML}</div>
@@ -89,10 +91,11 @@ function CardDisplay(indexValue) {
         <button class="popup-button-liveSource">
           See Source
           <img src=${project[0].seeSource} alt="">
+
         </button>
       </div>
     </div>
-</div>
+  </div>
   `;
 
   section.innerHTML = htmlMarkup;
@@ -101,14 +104,25 @@ function CardDisplay(indexValue) {
   const mediaQuery = window.matchMedia('(min-width: 992px)');
   if (mediaQuery.matches) {
     const popupImage = default1.querySelector('.popup-image');
-    popupImage.style.height = '486px';
-    popupImage.style.width = '1108px';
+    popupImage.style.maxHeight = '586px';
+    popupImage.style.width = '100%';
   }
+  const blurPage = document.querySelectorAll('.blur');
+  // console.log(blurPage);
 
+  for (let i = 0; i < blurPage.length; i += 1) {
+    blurPage[i].style.filter = 'blur(10px)';
+  }
+  const scrollStop = document.querySelector('body');
+  scrollStop.style.overflow = 'hidden';
   const closeIcon = document.querySelector('.close-icon');
   section.classList.toggle('popup');
   function display() {
     section.classList.toggle('popup');
+    for (let i = 0; i < blurPage.length; i += 1) {
+      blurPage[i].style.filter = 'blur(0)';
+      scrollStop.style.overflow = 'scroll';
+    }
   }
   closeIcon.addEventListener('click', display);
 }
