@@ -53,13 +53,6 @@
     padding-left: 8px;
   }
 
-  .popup-canopyitemwrap {
-    /* display: flex;
-    flex-direction: row;
-    padding-left: 4px; */
-    margin-top: -40px;
-  }
-
   .popup-cardimage {
     margin-top: 40px;
   }
@@ -77,10 +70,8 @@
     margin: 1px 2px;
   }
 
-  .popup-technology {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
+  .popup-cardtechnology {
+    margin-left: -40px;
   }
 
   .popup-button {
@@ -308,7 +299,9 @@
   }
 
   .cardtechnology {
+    width: 250px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

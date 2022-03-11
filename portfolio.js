@@ -120,9 +120,9 @@ function openPopup() {
 
       <div class = "tech-btn">
         <ul class="cardtechnology">
-        <li class="technology">${project.projectTechnologies[0]}</li>
-        <li class="technology">${project.projectTechnologies[1]}</li>
-        <li class="technology">${project.projectTechnologies[2]}</li>
+          <li class="technology">${project.projectTechnologies[0]}</li>
+          <li class="technology">${project.projectTechnologies[1]}</li>
+          <li class="technology">${project.projectTechnologies[2]}</li>
         </ul>
         <div class="popup-button">
           <button class="popup-button-liveSource">
@@ -147,6 +147,16 @@ function openPopup() {
         const popupcanopyitemwrap = openPopUp.querySelector('.canopyitemwrap');
         popupcanopyitemwrap.style.marginTop = '-40px';
         popupcanopyitemwrap.style.marginLeft = '0';
+        const cardTech = openPopUp.querySelector('.cardtechnology');
+        cardTech.classList.add('popup-cardtechnology');
+
+        const additionalTechnology = openPopUp.querySelector('.cardtechnology');
+        for (let a = 0; a < 3; a += 1) {
+          const liNode = document.createElement('li');
+          liNode.classList.add('technology');
+          liNode.appendChild(document.createTextNode(`${project.projectTechnologies[3 + a]}`));
+          additionalTechnology.appendChild(liNode);
+        }
       } else {
         popupElement.querySelector('.description').innerHTML = project.projectTextMobile;
       }
