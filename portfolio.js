@@ -128,7 +128,7 @@ function CardDisplay(indexValue) {
 // Validation for Contact Form
 
 const form = document.querySelector('#contact-form');
-const email = document.querySelector('#mail');
+const email = document.querySelector('#email');
 const invalidError = document.querySelector('#invalidError');
 
 form.addEventListener('submit', (e) => {
@@ -141,3 +141,40 @@ form.addEventListener('submit', (e) => {
     invalidError.textContent = '';
   }
 });
+
+// Local Storage
+
+const inputNameData = document.getElementById('fname');
+const inputEmailData = document.getElementById('email');
+const inputMessageData = document.getElementById('message');
+
+const formDataValues = [inputNameData, inputEmailData, inputMessageData];
+
+function retrieveFormData() {
+  const saveUserFormData = {};
+
+  for (let a = 0; a < formDataValues.length; a += 1) {
+    saveUserFormData[formDataValues[a].id] = formDataValues[a].value;
+  }
+  return saveUserFormData;
+}
+function setFormData() {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  inputNameData.value = formData.fname;
+  inputEmailData.value = formData.email;
+  inputMessageData.value = formData.message;
+}
+
+function setStorageData() {
+  localStorage.setItem('formData', JSON.stringify(retrieveFormData()));
+}
+
+inputNameData.setAttribute('onchange', 'setStorageData()');
+inputEmailData.setAttribute('onchange', 'setStorageData()');
+inputMessageData.setAttribute('onchange', 'setStorageData()');
+
+if (!localStorage.getItem('formData')) {
+  setStorageData();
+} else {
+  setFormData();
+}
