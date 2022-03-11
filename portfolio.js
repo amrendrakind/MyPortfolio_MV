@@ -126,16 +126,18 @@ function openPopup() {
         </ul>
         <div class='popup-seperator'> </div>
         <div class="popup-button">
-        
+          <a href = ${project.seeLivePage} target="_blank">
           <button class="popup-button-liveSource">
             See Live
             <img src=${project.seeLive} alt="">
           </button>
-
+          </a>
+          <a href = ${project.seeSourceCode} target="_blank">
           <button class="popup-button-liveSource">
             See Source 
             <img src=${project.seeSource} alt="">
           </button>
+          </a>
         </div>
       </div>
     </div>`;
