@@ -34,10 +34,13 @@ const listItem = document.querySelectorAll('a');
 
 for (let i = 0; i < listItem.length; i += 1) {
   listItem[i].addEventListener('click', () => {
-    document.getElementById('menu-item').style.display = 'none';
-    document.getElementById('logo-icon').style.display = 'flex';
-    document.getElementById('menu-icon').style.display = 'flex';
-    // window.location.reload();
+    if (window.innerWidth < 992) {
+      document.getElementById('menu-item').style.display = 'none';
+      document.getElementById('logo-icon').style.display = 'flex';
+      document.getElementById('menu-icon').style.display = 'flex';
+      const scrollStop = document.querySelector('body');
+      scrollStop.style.overflow = 'scroll';
+    }
   });
 }
 
