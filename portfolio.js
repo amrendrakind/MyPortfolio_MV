@@ -1,3 +1,6 @@
+import data from './projectData.js';
+
+const myProjects = data.projects;
 const humberger = document.querySelector('#menu-icon');
 
 humberger.addEventListener('click', () => {
@@ -38,91 +41,140 @@ for (let i = 0; i < listItem.length; i += 1) {
   });
 }
 
-const btnSeeProject = document.querySelectorAll('.btnseeproject');
-const card = document.querySelectorAll('.card');
 const section = document.createElement('section');
 section.className = 'default1';
 document.body.appendChild(section);
+// Dynamic Implementation
+const portfolioWork = document.querySelector('#portfolio-work');
 
-for (let m = 0; m < btnSeeProject.length - 2; m += 1) {
-  btnSeeProject[m].addEventListener('click', () => {
-    // eslint-disable-next-line no-use-before-define
-    CardDisplay(m);
+function implementProject() {
+  let i = 0;
+  myProjects.forEach((project) => {
+    const cardId = `card-button-${i + 1}`;
+    portfolioWork.innerHTML += `
+    <div class="card blur" id="portfolio">
+    <picture class="cardimage">
+      <source srcset="./images/Nature.png" media="(min-width: 992px)" />
+      <img class="popup-image" src="./images/blog_drbl_4x.png" alt="Blog Images" />
+    </picture>
+    
+    <div class="carditemwrapper">
+      <div class="cardheading">
+        <h2>${project.projectName}</h2>
+      </div>
+      <div class="canopyitemwrap">
+        <div class="cardcanopy">${project.companyName}</div>
+        <div class="dot cardlistitem">&bull;</div>
+        <div class="cardlistitem">${project.projectPosition}</div>
+        <div class="dot cardlistitem">&bull;</div>
+        <div class="cardlistitem">${project.projectDate}</div>
+      </div>
+      <div class="cardabout">
+        <p>${project.projectDescription}</p>
+      </div>
+      <ul class="cardtechnology">
+        <li class="technology">${project.projectTechnologies[0]}</li>
+        <li class="technology">${project.projectTechnologies[1]}</li>
+        <li class="technology">${project.projectTechnologies[2]}</li>
+      </ul>
+      <button data-key="${project.key}" id="${cardId}" type="button" class="btnseeproject">See Project</button>
+    </div>
+    </div>`;
+    i += 1;
   });
 }
 
-function CardDisplay(indexValue) {
-  const portfolioHeading = card[indexValue].children[1].children[0];
-  const canopyItem = card[indexValue].children[1].children[1];
-  const cardImage = card[indexValue].children[0];
-  const technology = card[indexValue].children[1].children[3];
+implementProject();
+// Popup Creation
 
-  const project = [{
-    closePopup: './images/close2.png',
-    portfolioHeading: `${portfolioHeading.innerHTML}`,
-    canopyItem: `${canopyItem.innerHTML}`,
-    cardImage: `${cardImage.innerHTML}`,
-    technology: `${technology.innerHTML}`,
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-    + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
-    + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    seeLive: './images/seeLive.png',
-    seeSource: './images/seeSource.png',
-    liveProjectLink: 'https://amrendrakind.github.io/MyPortfolio_MV/',
-    SourceCodeLink: 'https://github.com/amrendrakind/MyPortfolio_MV',
+function openPopup() {
+  const project1 = [{
+    cardImage: ` <picture class="cardimage">
+    <source srcset="./images/Nature.png" media="(min-width: 992px)" />
+    <img class="popup-image" src="./images/blog_drbl_4x.png" alt="Blog Images" />
+  </picture>`,
   }];
 
-  const htmlMarkup = `
-  <div class = "popup-heading-wrap">
-    <div class="popup-heading">    ${project[0].portfolioHeading}</div>
-    <img class="close-icon" src=${project[0].closePopup}>
-  </div>
-  <div class="popup-canopy" >${project[0].canopyItem}</div>
-  <picture class="popup-cardimage">  ${project[0].cardImage} </picture>
-  <div class = "desc-tech-btn">
-    <div class = "description" >${project[0].description}</div>
-    <div class = "tech-btn">
-      <div class="popup-technology" >${project[0].technology}</div>
-      <div class="popup-button">
-        <button class="popup-button-liveSource">
-          See Live
-          <img src=${project[0].seeLive} alt="">
-        </button>
-        <button class="popup-button-liveSource">
-          See Source
-          <img src=${project[0].seeSource} alt="">
-        </button>
+  const allCardButtons = document.querySelectorAll("[id*='card-button']");
+
+  let i = 0;
+  myProjects.forEach((project) => {
+    allCardButtons[i].addEventListener('click', () => {
+      const modalElement = document.createElement('div');
+
+      modalElement.id = 'openPopUp';
+      modalElement.setAttribute('class', 'popup');
+      modalElement.innerHTML = `  
+      <div class = "popup-heading-wrap">
+        <div class="popup-heading cardheading"> ${project.projectName}</div>
+        <img class="close-icon" src='./images/close2.png'>
       </div>
-    </div>
-  </div>
-  `;
 
-  section.innerHTML = htmlMarkup;
+      <div class="canopyitemwrap">
+        <div class="cardcanopy">${project.companyName}</div>
+        <div class="dot cardlistitem">&bull;</div>
+        <div class="cardlistitem">${project.projectPosition}</div>
+        <div class="dot cardlistitem">&bull;</div>
+        <div class="cardlistitem">${project.projectDate}</div>
+      </div>
 
-  const default1 = document.querySelector('.default1');
-  // console.log(default1);
-  const mediaQuery = window.matchMedia('(min-width: 992px)');
-  if (mediaQuery.matches) {
-    const popupImage = default1.querySelector('.popup-image');
-    popupImage.style.maxHeight = '586px';
-    popupImage.style.width = '100%';
-  }
-  const blurPage = document.querySelectorAll('.blur');
+     <picture class="popup-cardimage">  ${project1[0].cardImage} </picture>
 
-  for (let i = 0; i < blurPage.length; i += 1) {
-    blurPage[i].style.filter = 'blur(10px)';
-  }
-  const scrollStop = document.querySelector('body');
-  scrollStop.style.overflow = 'hidden';
-  const closeIcon = document.querySelector('.close-icon');
-  section.classList.toggle('popup');
-  function display() {
-    section.classList.toggle('popup');
-    scrollStop.style.overflow = 'scroll';
-    for (let i = 0; i < blurPage.length; i += 1) {
-      blurPage[i].style.filter = 'blur(0)';
-    }
-    default1.innerHTML = '';
-  }
-  closeIcon.addEventListener('click', display);
+    <div class = "desc-tech-btn">
+      <div class = "description" >${project.projectDescription}</div>
+
+      <div class = "tech-btn">
+        <ul class="cardtechnology">
+        <li class="technology">${project.projectTechnologies[0]}</li>
+        <li class="technology">${project.projectTechnologies[1]}</li>
+        <li class="technology">${project.projectTechnologies[2]}</li>
+        </ul>
+        <div class="popup-button">
+          <button class="popup-button-liveSource">
+            See Live
+            <img src=${project.seeLive} alt="">
+          </button>
+          <button class="popup-button-liveSource">
+            See Source
+            <img src=${project.seeSource} alt="">
+          </button>
+        </div>
+      </div>
+    </div>`;
+
+      portfolioWork.appendChild(modalElement);
+      if (window.innerWidth >= 992) {
+        modalElement.querySelector('.description').innerHTML = project.projectTextDesktop;
+        const openPopUp = document.getElementById('openPopUp');
+        const popupImage = openPopUp.querySelector('.popup-image');
+        popupImage.style.maxHeight = '586px';
+        popupImage.style.width = '97%';
+      } else {
+        modalElement.querySelector('.description').innerHTML = project.projectTextMobile;
+      }
+
+      document.querySelector('html').style.overflowY = 'hidden';
+
+      const blurPage = document.querySelectorAll('.blur');
+
+      for (let i = 0; i < blurPage.length; i += 1) {
+        blurPage[i].style.filter = 'blur(10px)';
+      }
+      const closeBtn = document.querySelector('.close-icon');
+
+      closeBtn.addEventListener('click', () => {
+        const modal = document.getElementById('openPopUp');
+        modal.remove();
+        document.querySelector('html').style.overflowY = 'auto';
+        const blurPage = document.querySelectorAll('.blur');
+
+        for (let i = 0; i < blurPage.length; i += 1) {
+          blurPage[i].style.filter = 'blur(0)';
+        }
+      });
+    });
+
+    i += 1;
+  });
 }
+openPopup();

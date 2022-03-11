@@ -15,10 +15,11 @@
     min-width: 50%;
     min-height: 1163px;
     max-height: 100%;
-    margin-left: 6%;
-    margin-right: 8%;
+    /* margin-left: 6%;
+    margin-right: 8%; */
     border-radius: 16px;
     overflow: scroll;
+    z-index: 99;
   }
 
   .popup-heading-wrap {
@@ -63,7 +64,7 @@
     font-size: 15px;
     line-height: 24px;
     color: #344563;
-    margin: 12px 0;
+    margin: 1px 25px;
   }
 
   .popup-technology {
@@ -109,6 +110,7 @@
   .tech-btn {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
   }
 
   .blur {
@@ -129,6 +131,7 @@
     font-size: 16px;
     color: #344563;
     text-decoration: none;
+    z-index: 0;
   }
 
   nav {
@@ -575,6 +578,7 @@
     margin-left: calc(51% - 343px / 2);
     border-radius: 16px;
     overflow: scroll;
+    z-index: 99;
   }
 
   .popup-heading-wrap {
@@ -691,7 +695,6 @@
     align-items: center;
     color: #fff;
     text-decoration: none;
-    z-index: 99;
   }
 
   nav {
@@ -713,6 +716,7 @@
   li {
     display: inline-block;
     padding: 0 10px;
+    z-index:0;
   }
 
   .nav__links {
@@ -872,6 +876,7 @@
     justify-content: space-between;
     align-self: flex-start;
     margin-left: -45px;
+    z-index:0;
   }
 
   .technology {
