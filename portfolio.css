@@ -627,12 +627,16 @@
     align-self: flex-start;
   }
 
+  .popup-seperator {
+    border: 1px solid #ebecf0;
+  }
+
   .popup-button {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 10px;
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   .popup-button-liveSource {

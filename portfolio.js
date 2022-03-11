@@ -124,13 +124,16 @@ function openPopup() {
           <li class="technology">${project.projectTechnologies[1]}</li>
           <li class="technology">${project.projectTechnologies[2]}</li>
         </ul>
+        <div class='popup-seperator'> </div>
         <div class="popup-button">
+        
           <button class="popup-button-liveSource">
             See Live
             <img src=${project.seeLive} alt="">
           </button>
+
           <button class="popup-button-liveSource">
-            See Source
+            See Source 
             <img src=${project.seeSource} alt="">
           </button>
         </div>
