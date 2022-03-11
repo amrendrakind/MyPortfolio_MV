@@ -3,8 +3,8 @@ const data = {
     {
       key: 0,
       projectName: 'Tonic',
-      projectImageMobile: './images/Nature.png',
-      projectImageDesktop: './images/blog_drbl_4x.png',
+      projectImageMobile: './images/blog_drbl_4x.png',
+      projectImageDesktop: './images/Nature.png',
       companyName: 'CANOPY',
       projectPosition: 'Back End Dev',
       projectDate: 2015,
@@ -39,8 +39,8 @@ const data = {
     {
       key: 2,
       projectName: 'Facebook 360',
-      projectImageMobile: './images/Facebook360.png',
-      projectImageDesktop: './images/blog_drbl_4x.png',
+      projectImageMobile: './images/Snapshoot_Portfolio_Yoga.png',
+      projectImageDesktop: './images/Facebook360.png',
       companyName: 'CANOPY',
       projectPosition: 'Back End Dev',
       projectDate: 2015,
@@ -57,8 +57,8 @@ const data = {
     {
       key: 3,
       projectName: 'Uber Navigation',
-      projectImageMobile: './images/Nature.png',
-      projectImageDesktop: './images/blog_drbl_4x.png',
+      projectImageMobile: './images/Snapshoot_Portfolio_MultiPostStories.png',
+      projectImageDesktop: './images/availability.png',
       companyName: 'Uber',
       projectPosition: 'Back End Dev',
       projectDate: 2015,

@@ -54,8 +54,8 @@ function implementProject() {
     portfolioWork.innerHTML += `
     <div class="card blur" id="portfolio">
     <picture class="cardimage">
-      <source srcset="./images/Nature.png" media="(min-width: 992px)" />
-      <img class="popup-image" src="./images/blog_drbl_4x.png" alt="Blog Images" />
+      <source srcset=${project.projectImageDesktop} media="(min-width: 992px)" />
+      <img class="popup-image" src=${project.projectImageMobile} alt="Blog Images" />
     </picture>
     
     <div class="carditemwrapper">
@@ -88,28 +88,20 @@ implementProject();
 // Popup Creation
 
 function openPopup() {
-  const project1 = [{
-    cardImage: ` <picture class="cardimage">
-    <source srcset="./images/Nature.png" media="(min-width: 992px)" />
-    <img class="popup-image" src="./images/blog_drbl_4x.png" alt="Blog Images" />
-  </picture>`,
-  }];
-
   const allCardButtons = document.querySelectorAll("[id*='card-button']");
 
   let i = 0;
   myProjects.forEach((project) => {
     allCardButtons[i].addEventListener('click', () => {
-      const modalElement = document.createElement('div');
+      const popupElement = document.createElement('div');
 
-      modalElement.id = 'openPopUp';
-      modalElement.setAttribute('class', 'popup');
-      modalElement.innerHTML = `  
+      popupElement.id = 'openPopUp';
+      popupElement.setAttribute('class', 'popup');
+      popupElement.innerHTML = `  
       <div class = "popup-heading-wrap">
         <div class="popup-heading cardheading"> ${project.projectName}</div>
         <img class="close-icon" src='./images/close2.png'>
       </div>
-
       <div class="canopyitemwrap">
         <div class="cardcanopy">${project.companyName}</div>
         <div class="dot cardlistitem">&bull;</div>
@@ -118,7 +110,10 @@ function openPopup() {
         <div class="cardlistitem">${project.projectDate}</div>
       </div>
 
-     <picture class="popup-cardimage">  ${project1[0].cardImage} </picture>
+     <picture class="popup-cardimage"> 
+        <source srcset=${project.projectImageDesktop} media="(min-width: 992px)" />
+        <img class="popup-image" src=${project.projectImageMobile} alt="Blog Images" />
+      </picture>
 
     <div class = "desc-tech-btn">
       <div class = "description" >${project.projectDescription}</div>
@@ -142,15 +137,18 @@ function openPopup() {
       </div>
     </div>`;
 
-      portfolioWork.appendChild(modalElement);
+      portfolioWork.appendChild(popupElement);
       if (window.innerWidth >= 992) {
-        modalElement.querySelector('.description').innerHTML = project.projectTextDesktop;
+        popupElement.querySelector('.description').innerHTML = project.projectTextDesktop;
         const openPopUp = document.getElementById('openPopUp');
         const popupImage = openPopUp.querySelector('.popup-image');
         popupImage.style.maxHeight = '586px';
-        popupImage.style.width = '97%';
+        popupImage.style.width = '100%';
+        const popupcanopyitemwrap = openPopUp.querySelector('.canopyitemwrap');
+        popupcanopyitemwrap.style.marginTop = '-40px';
+        popupcanopyitemwrap.style.marginLeft = '0';
       } else {
-        modalElement.querySelector('.description').innerHTML = project.projectTextMobile;
+        popupElement.querySelector('.description').innerHTML = project.projectTextMobile;
       }
 
       document.querySelector('html').style.overflowY = 'hidden';
@@ -163,8 +161,8 @@ function openPopup() {
       const closeBtn = document.querySelector('.close-icon');
 
       closeBtn.addEventListener('click', () => {
-        const modal = document.getElementById('openPopUp');
-        modal.remove();
+        const openPopUp = document.getElementById('openPopUp');
+        openPopUp.remove();
         document.querySelector('html').style.overflowY = 'auto';
         const blurPage = document.querySelectorAll('.blur');
 
