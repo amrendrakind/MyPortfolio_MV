@@ -37,14 +37,10 @@ for (let i = 0; i < listItem.length; i += 1) {
     document.getElementById('menu-item').style.display = 'none';
     document.getElementById('logo-icon').style.display = 'flex';
     document.getElementById('menu-icon').style.display = 'flex';
-    window.location.reload();
+    // window.location.reload();
   });
 }
 
-const section = document.createElement('section');
-section.className = 'default1';
-document.body.appendChild(section);
-// Dynamic Implementation
 const portfolioWork = document.querySelector('#portfolio-work');
 
 function implementProject() {
