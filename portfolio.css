@@ -15,9 +15,9 @@
     min-width: 50%;
     min-height: 1163px;
     max-height: 100%;
-    margin-left: 6%;
-    margin-right: 8%;
     border-radius: 16px;
+    overflow: scroll;
+    z-index: 99;
   }
 
   .popup-heading-wrap {
@@ -27,13 +27,14 @@
     align-items: flex-start;
     padding-left: 15px;
     padding-right: 10px;
+    margin-top: -25px;
   }
 
   .popup-heading {
-    width: 1160px;
+    width: 1100px;
     font-family: "Poppins", sans-serif;
     margin-top: -10px;
-    margin-left: -10px;
+    margin-left: -60px;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -52,6 +53,10 @@
     padding-left: 8px;
   }
 
+  .popup-cardimage {
+    margin-top: 40px;
+  }
+
   .description {
     display: flex;
     flex-direction: column;
@@ -62,13 +67,11 @@
     font-size: 15px;
     line-height: 24px;
     color: #344563;
-    margin: 12px 0;
+    margin: 1px 2px;
   }
 
-  .popup-technology {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
+  .popup-cardtechnology {
+    margin-left: -40px;
   }
 
   .popup-button {
@@ -108,6 +111,7 @@
   .tech-btn {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
   }
 
   .blur {
@@ -132,6 +136,7 @@
     font-size: 16px;
     color: #344563;
     text-decoration: none;
+    z-index: 0;
   }
 
   nav {
@@ -258,8 +263,9 @@
   .canopyitemwrap {
     display: flex;
     flex-direction: row;
-    padding-left: 45px;
+    padding-left: 4px;
     margin-top: -75px;
+    margin-left: 40px;
   }
 
   .cardheading {
@@ -297,7 +303,9 @@
   }
 
   .cardtechnology {
+    width: 250px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -577,6 +585,8 @@
     position: fixed;
     margin-left: calc(51% - 343px / 2);
     border-radius: 16px;
+    overflow: scroll;
+    z-index: 99;
   }
 
   .popup-heading-wrap {
@@ -621,12 +631,16 @@
     align-self: flex-start;
   }
 
+  .popup-seperator {
+    border: 1px solid #ebecf0;
+  }
+
   .popup-button {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 10px;
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   .popup-button-liveSource {
@@ -693,7 +707,6 @@
     align-items: center;
     color: #fff;
     text-decoration: none;
-    z-index: 99;
   }
 
   nav {
@@ -715,6 +728,7 @@
   li {
     display: inline-block;
     padding: 0 10px;
+    z-index: 0;
   }
 
   .nav__links {
@@ -874,6 +888,7 @@
     justify-content: space-between;
     align-self: flex-start;
     margin-left: -45px;
+    z-index: 0;
   }
 
   .technology {
