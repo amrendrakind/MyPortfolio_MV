@@ -230,6 +230,10 @@
     color: #505f79;
   }
 
+  .swap-order:nth-child(even) {
+    order: 0;
+  }
+
   .card {
     height: 496px;
     width: 1156px;
@@ -249,10 +253,6 @@
     padding-top: 24px;
     padding-bottom: 24px;
     padding-right: 22px;
-  }
-
-  .swap {
-    order: 1;
   }
 
   .carditemwrapper {

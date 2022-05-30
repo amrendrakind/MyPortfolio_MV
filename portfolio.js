@@ -52,38 +52,38 @@ function implementProject() {
     const cardId = `card-button-${i + 1}`;
     portfolioWork.innerHTML += `
     <div class="card blur" id="portfolio">
-    <picture class="cardimage">
-      <source srcset=${project.projectImageDesktop} media="(min-width: 992px)" />
-      <img class="popup-image" src=${project.projectImageMobile} alt="Blog Images" />
-    </picture>
-    
-    <div class="carditemwrapper">
-      <div class="cardheading">
-        <h2>${project.projectName}</h2>
+      <picture class="cardimage swap-order">
+        <source srcset=${project.projectImageDesktop} media="(min-width: 992px)" />
+        <img class="popup-image" src=${project.projectImageMobile} alt="Blog Images" />
+      </picture>
+      
+      <div class="carditemwrapper">
+        <div class="cardheading">
+          <h2>${project.projectName}</h2>
+        </div>
+        <div class="canopyitemwrap">
+          <div class="cardcanopy">${project.companyName}</div>
+          <div class="dot cardlistitem">&bull;</div>
+          <div class="cardlistitem">${project.projectPosition}</div>
+          <div class="dot cardlistitem">&bull;</div>
+          <div class="cardlistitem">${project.projectDate}</div>
+        </div>
+        <div class="cardabout">
+          <p>${project.projectDescription}</p>
+        </div>
+        <ul class="cardtechnology">
+          <li class="technology">${project.projectTechnologies[0]}</li>
+          <li class="technology">${project.projectTechnologies[1]}</li>
+          <li class="technology">${project.projectTechnologies[2]}</li>
+        </ul>
+        <button data-key="${project.key}" id="${cardId}" type="button" class="btnseeproject">See Project</button>
       </div>
-      <div class="canopyitemwrap">
-        <div class="cardcanopy">${project.companyName}</div>
-        <div class="dot cardlistitem">&bull;</div>
-        <div class="cardlistitem">${project.projectPosition}</div>
-        <div class="dot cardlistitem">&bull;</div>
-        <div class="cardlistitem">${project.projectDate}</div>
-      </div>
-      <div class="cardabout">
-        <p>${project.projectDescription}</p>
-      </div>
-      <ul class="cardtechnology">
-        <li class="technology">${project.projectTechnologies[0]}</li>
-        <li class="technology">${project.projectTechnologies[1]}</li>
-        <li class="technology">${project.projectTechnologies[2]}</li>
-      </ul>
-      <button data-key="${project.key}" id="${cardId}" type="button" class="btnseeproject">See Project</button>
-    </div>
     </div>`;
     i += 1;
   });
 }
-
 implementProject();
+
 // Popup Creation
 
 function openPopup() {
@@ -192,7 +192,10 @@ function openPopup() {
 
 openPopup();
 
-// Validation for Contact Form
+const nthchild = document.querySelectorAll('.swap-order');
+for (let i = 0; i < nthchild.length; i += 2) {
+  nthchild[i].style.order = 1;
+}
 
 const form = document.querySelector('#contact-form');
 const email = document.querySelector('#email');
