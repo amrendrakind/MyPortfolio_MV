@@ -245,12 +245,20 @@
     margin-right: 142px;
     margin-top: 142px;
   }
-
+  
   .cardimage {
     width: 544px;
     height: 448px;
     padding-left: 24px;
-    padding-top: 24px;
+    padding-top: 15px;
+    padding-bottom: 24px;
+    padding-right: 22px;
+  }
+
+  .popup-image {
+    width: 544px;
+    height: 448px;
+    padding-top: 15px;
     padding-bottom: 24px;
     padding-right: 22px;
   }
@@ -287,8 +295,17 @@
     font-size: 1.5rem;
   }
 
+  .dot-cardlistitem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+
   .cardlistitem {
     color: #6b778c;
+    font-weight: 500;
     line-height: 24px;
     padding-right: 5px;
     padding-left: 10px;
@@ -303,12 +320,12 @@
   }
 
   .cardtechnology {
-    width: 250px;
+    width: 350px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     align-self: flex-start;
     margin-top: -40px;
   }
@@ -823,12 +840,13 @@
     order: 0;
   }
 
+  .popup-image,
   .cardimage {
     position: static;
     width: 295px;
     height: 220px;
-    margin-left: 16px;
-    margin-right: 16px;
+    /* margin-left: 16px;
+    margin-right: 16px; */
     border-radius: 8px;
   }
 
@@ -848,7 +866,6 @@
   .canopyitemwrap {
     display: flex;
     width: 290px;
-    align-self: flex-start;
   }
 
   .cardcanopy {
@@ -874,6 +891,15 @@
 
   .dot {
     font-size: 1.5rem;
+  }
+
+  .dot-cardlistitem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding-left: 20px;
   }
 
   .cardabout {
