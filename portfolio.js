@@ -192,10 +192,22 @@ function openPopup() {
 
 openPopup();
 
-const nthchild = document.querySelectorAll('.swap-order');
-for (let i = 0; i < nthchild.length; i += 2) {
-  nthchild[i].style.order = 1;
+function myFunction() {
+  if (window.innerWidth >= 992) {
+    const nthchild = document.querySelectorAll('.swap-order');
+    for (let i = 0; i < nthchild.length; i += 2) {
+      nthchild[i].style.order = 1;
+    }
+  } else {
+    const nthchild = document.querySelectorAll('.swap-order');
+    for (let i = 0; i < nthchild.length; i += 2) {
+      nthchild[i].style.order = 0;
+    }
+  }
 }
+
+window.onload = myFunction();
+window.onresize = myFunction;
 
 const form = document.querySelector('#contact-form');
 const email = document.querySelector('#email');

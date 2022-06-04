@@ -815,8 +815,12 @@
     width: 343px;
     height: auto;
     margin-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 50px;  
     margin-left: calc(50% - 327px / 2);
+  }
+
+  .swap-order:nth-child(even) {
+    order: 0;
   }
 
   .cardimage {
