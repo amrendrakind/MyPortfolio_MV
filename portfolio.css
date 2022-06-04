@@ -258,9 +258,7 @@
   .popup-image {
     width: 544px;
     height: 448px;
-    padding-top: 15px;
-    padding-bottom: 24px;
-    padding-right: 22px;
+    border: 1px solid rgb(193, 193, 193);
   }
 
   .carditemwrapper {
@@ -840,13 +838,21 @@
     order: 0;
   }
 
-  .popup-image,
+
   .cardimage {
     position: static;
     width: 295px;
     height: 220px;
-    /* margin-left: 16px;
-    margin-right: 16px; */
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+  }
+
+  .popup-image {
+    position: static;
+    width: 295px;
+    height: 220px;
+    border: 1px solid rgb(193, 193, 193);
     border-radius: 8px;
   }
 

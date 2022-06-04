@@ -10,11 +10,9 @@ const data = {
       projectDate: 2022,
       projectDescription: 'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
       projectTechnologies: ['ReactJS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
-      projectTextMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-      + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
-      + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      projectTextMobile: 'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
       projectTextDesktop:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+        'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/financial-metrics/',
@@ -25,16 +23,17 @@ const data = {
       projectName: 'Space Travelers',
       projectImageMobile: './images/SpaceTravellersHub.png',
       projectImageDesktop: './images/SpaceTravellersHub.png',
-      companyName: 'MICROVERSE Project',
+      companyName: 'MICROVERSE',
       projectPosition: 'Front End Dev',
       projectDate: 2022,
       projectDescription: 'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.',
-      projectTechnologies: ['React JS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
-      projectTextMobile: 'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions'
-      + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
-      + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      projectTechnologies: ['ReactJS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.',
       projectTextDesktop:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+        'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.'
+        + 'User can go to My Profile that section displays all reserved rockets and space missions.'
+        + 'User can join missions if they wish.'
+        + 'Users can book each rocket by clicking the reservation button or cancel the previously made booking.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/space-travelers/',
@@ -45,16 +44,17 @@ const data = {
       projectName: 'BookStore',
       projectImageMobile: './images/Bookstore.png',
       projectImageDesktop: './images/Bookstore.png',
-      companyName: 'MICROVERSE Project',
+      companyName: 'MICROVERSE',
       projectPosition: 'Front End Dev',
       projectDate: 2022,
-      projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      projectTechnologies: ['html', 'css', 'JavaScript', 'github', 'ruby', 'Bootstraps'],
-      projectTextMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-      + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
-      + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      projectDescription: 'This project is for Bookstore MVP version website. It will Display a list of books, Add a book, Remove a selected book. I will use use React and Redux.',
+      projectTechnologies: ['ReactJS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'This project is for Bookstore MVP version website. It will Display a list of books, Add a book, Remove a selected book. I will use use React and Redux.',
       projectTextDesktop:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+        'The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I will create an MVP version of it that allows you to:'
+        + 'Display a list of books.'
+        + 'Add a book.'
+        + 'Remove a selected book.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/bookstore-react/',
@@ -65,16 +65,14 @@ const data = {
       projectName: 'Math Magicians',
       projectImageMobile: './images/Match-Magician.png',
       projectImageDesktop: './images/Match-Magician.png',
-      companyName: 'MICROVERSE Project',
+      companyName: 'MICROVERSE',
       projectPosition: 'Front End Dev',
       projectDate: 2022,
-      projectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-      projectTechnologies: ['html', 'css', 'JavaScript', 'github', 'ruby', 'Bootstraps'],
-      projectTextMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-      + 'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type'
-      + 'specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      projectDescription: '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
+      projectTechnologies: ['ReactJS', 'JavaScript', 'CSS', 'HTML', 'Webpack', 'GitFlow'],
+      projectTextMobile: '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
       projectTextDesktop:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+        '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/math-magicians/',

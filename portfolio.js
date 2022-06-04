@@ -107,10 +107,14 @@ function openPopup() {
       </div>
       <div class="canopyitemwrap">
         <div class="cardcanopy">${project.companyName}</div>
-        <div class="dot cardlistitem">&bull;</div>
-        <div class="cardlistitem">${project.projectPosition}</div>
-        <div class="dot cardlistitem">&bull;</div>
-        <div class="cardlistitem">${project.projectDate}</div>
+        <div class="dot-cardlistitem">
+          <div class="dot cardlistitem">&bull;</div>
+          <div class="cardlistitem">${project.projectPosition}</div>
+        </div>
+        <div class="dot-cardlistitem">
+          <div class="dot cardlistitem">&bull;</div>
+          <div class="cardlistitem">${project.projectDate}</div>
+        </div>
       </div>
 
      <picture class="popup-cardimage"> 
