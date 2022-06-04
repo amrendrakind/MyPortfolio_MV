@@ -431,6 +431,7 @@
 
   .btngetmyresume {
     margin-left: 0;
+    cursor: pointer;
   }
 
   .acordianwrapper {
