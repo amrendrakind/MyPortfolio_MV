@@ -429,6 +429,9 @@
     transition: all ease 0.3s;
   }
 
+  .about-myselfcontent a {
+    width: 145px;
+  }
   .btngetmyresume {
     margin-left: 0;
     cursor: pointer;
