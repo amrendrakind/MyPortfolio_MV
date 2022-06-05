@@ -96,6 +96,24 @@ const data = {
       seeLivePage: 'https://amrendrakind.github.io/API-based-webapp/',
       seeSourceCode: 'https://github.com/amrendrakind/API-based-webapp/',
     },
+    {
+      key: 5,
+      projectName: 'Conference Page',
+      projectImageMobile: './projects/ConferencePage.png',
+      projectImageDesktop: './projects/ConferencePage.png',
+      companyName: 'MICROVERSE',
+      projectPosition: 'Front End Dev',
+      projectDate: 2022,
+      projectDescription: 'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
+      projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
+      projectTextDesktop:
+        'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://amrendrakind.github.io/conferencePage_capstoneProject/',
+      seeSourceCode: 'https://github.com/amrendrakind/conferencePage_capstoneProject/',
+    },
   ],
 };
 export default data;
