@@ -163,7 +163,7 @@ function openPopup() {
         cardTech.classList.add('popup-cardtechnology');
 
         const additionalTechnology = openPopUp.querySelector('.cardtechnology');
-        for (let a = 0; a < 3; a += 1) {
+        for (let a = 0; a < project.projectTechnologies.length - 3; a += 1) {
           const liNode = document.createElement('li');
           liNode.classList.add('technology');
           liNode.appendChild(document.createTextNode(`${project.projectTechnologies[3 + a]}`));
