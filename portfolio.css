@@ -603,7 +603,6 @@
     box-sizing: border-box;
     width: 343px;
     position: fixed;
-    margin-left: calc(51% - 343px / 2);
     border-radius: 16px;
     overflow: scroll;
     z-index: 99;
