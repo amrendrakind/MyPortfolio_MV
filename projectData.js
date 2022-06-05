@@ -98,6 +98,24 @@ const data = {
     },
     {
       key: 5,
+      projectName: 'Leaderboard',
+      projectImageMobile: './projects/Leaderboard.png',
+      projectImageDesktop: './projects/Leaderboard.png',
+      companyName: 'MICROVERSE',
+      projectPosition: 'Front End Dev',
+      projectDate: 2022,
+      projectDescription: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
+      projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'API', 'Webpack', 'ES6', 'GitFlow'],
+      projectTextMobile: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
+      projectTextDesktop:
+        'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://amrendrakind.github.io/Leaderboard/',
+      seeSourceCode: 'https://github.com/amrendrakind/Leaderboard/',
+    },
+    {
+      key: 6,
       projectName: 'ToDo Lists',
       projectImageMobile: './projects/ToDoList.png',
       projectImageDesktop: './projects/ToDoList.png',
@@ -115,7 +133,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/ToDoList/',
     },
     {
-      key: 6,
+      key: 7,
       projectName: 'Awesome Books',
       projectImageMobile: './projects/AwesomeBooks.png',
       projectImageDesktop: './projects/AwesomeBooks.png',
@@ -133,7 +151,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/AwesomeBooks_ES6/',
     },
     {
-      key: 7,
+      key: 8,
       projectName: 'Conference Page',
       projectImageMobile: './projects/ConferencePage.png',
       projectImageDesktop: './projects/ConferencePage.png',
