@@ -98,6 +98,24 @@ const data = {
     },
     {
       key: 5,
+      projectName: 'ToDo Lists',
+      projectImageMobile: './projects/ToDoList.png',
+      projectImageDesktop: './projects/ToDoList.png',
+      companyName: 'MICROVERSE',
+      projectPosition: 'Front End Dev',
+      projectDate: 2022,
+      projectDescription: '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
+      projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'Webpack', 'ES6', 'GitFlow'],
+      projectTextMobile: '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
+      projectTextDesktop:
+        '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://amrendrakind.github.io/ToDoList/',
+      seeSourceCode: 'https://github.com/amrendrakind/ToDoList/',
+    },
+    {
+      key: 6,
       projectName: 'Awesome Books',
       projectImageMobile: './projects/AwesomeBooks.png',
       projectImageDesktop: './projects/AwesomeBooks.png',
@@ -115,7 +133,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/AwesomeBooks_ES6/',
     },
     {
-      key: 6,
+      key: 7,
       projectName: 'Conference Page',
       projectImageMobile: './projects/ConferencePage.png',
       projectImageDesktop: './projects/ConferencePage.png',
