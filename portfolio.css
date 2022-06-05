@@ -822,6 +822,14 @@
     transition: all ease 0.3s;
   }
 
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -836,7 +844,6 @@
     height: auto;
     margin-top: 60px;
     margin-bottom: 50px;
-    margin-left: calc(50% - 327px / 2);
     z-index: 0;
   }
 
