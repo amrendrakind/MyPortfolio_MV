@@ -448,6 +448,7 @@
   .about-myselfcontent a {
     width: 145px;
   }
+
   .btngetmyresume {
     margin-left: 0;
     cursor: pointer;
@@ -1031,15 +1032,22 @@
   }
 
   .aboutsocial-icons {
+    padding: 0;
+    margin: 0;
+    width: 250px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .aboutsocial-icons li {
+    padding: 0;
+    margin: 0;
   }
 
   .aboutsocial-icons a {
-    width: 200px;
     font-size: 24px;
-    margin-left: -50px;
-    padding-right: 40px;
   }
 
   .aboutsocial-icons a:hover i {

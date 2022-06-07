@@ -34,7 +34,9 @@ cancel.addEventListener('click', () => {
   const scrollStop = document.querySelector('body');
   scrollStop.style.overflow = 'scroll';
 });
-const listItem = document.querySelectorAll('a');
+
+const menuItem = document.getElementById('menu-item');
+const listItem = menuItem.querySelectorAll('a');
 
 for (let i = 0; i < listItem.length; i += 1) {
   listItem[i].addEventListener('click', () => {
