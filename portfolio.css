@@ -709,16 +709,19 @@
     left: -11px;
     mix-blend-mode: multiply;
     backdrop-filter: blur(10px);
+    z-index: 99;
   }
 
   .cancel {
     align-self: flex-end;
     margin-right: 10px;
+    z-index: 99;
   }
 
   .list-items {
     display: block;
     align-self: flex-start;
+    z-index: 99;
   }
 
   body {
