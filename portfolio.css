@@ -715,13 +715,11 @@
   .cancel {
     align-self: flex-end;
     margin-right: 10px;
-    z-index: 99;
   }
 
   .list-items {
     display: block;
     align-self: flex-start;
-    z-index: 99;
   }
 
   body {
