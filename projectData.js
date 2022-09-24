@@ -1,6 +1,24 @@
 const data = {
   projects: [
     {
+      key: 10,
+      projectName: 'Budget App',
+      projectImageMobile: './projects/BudgetApp.png',
+      projectImageDesktop: './projects/BudgetApp.png',
+      companyName: 'MICROVERSE',
+      projectPosition: 'Back End Dev',
+      projectDate: 2022,
+      projectDescription: 'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      projectTechnologies: ['Ruby', 'Rails', 'PostgreSQL', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      projectTextDesktop:
+        'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://lit-brook-15225.herokuapp.com/',
+      seeSourceCode: 'https://github.com/amrendrakind/budget-app',
+    },
+    {
       key: 9,
       projectName: 'Recipe App',
       projectImageMobile: './projects/RecipeApp.png',
