@@ -3,8 +3,8 @@ const data = {
     {
       key: 11,
       projectName: 'Cars App',
-      projectImageMobile: './projects/BudgetApp.png',
-      projectImageDesktop: './projects/BudgetApp.png',
+      projectImageMobile: './projects/Cars.png',
+      projectImageDesktop: './projects/Cars.png',
       companyName: 'MICROVERSE',
       projectPosition: 'Full Stack Dev',
       projectDate: 2022,
