@@ -1,6 +1,24 @@
 const data = {
   projects: [
     {
+      key: 11,
+      projectName: 'Cars App',
+      projectImageMobile: './projects/BudgetApp.png',
+      projectImageDesktop: './projects/BudgetApp.png',
+      companyName: 'MICROVERSE',
+      projectPosition: 'Full Stack Dev',
+      projectDate: 2022,
+      projectDescription: 'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
+      projectTechnologies: ['Ruby', 'Rails', 'PostgreSQL', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
+      projectTextDesktop:
+        'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://cars-capstone.herokuapp.com/',
+      seeSourceCode: 'https://github.com/amrendrakind/Cars',
+    },
+    {
       key: 10,
       projectName: 'Budget App',
       projectImageMobile: './projects/BudgetApp.png',
