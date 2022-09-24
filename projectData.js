@@ -1,7 +1,25 @@
 const data = {
   projects: [
     {
-      key: 0,
+      key: 9,
+      projectName: 'Recipe App',
+      projectImageMobile: './projects/RecipeApp.png',
+      projectImageDesktop: './projects/RecipeApp.png',
+      companyName: 'MICROVERSE',
+      projectPosition: 'Back End Dev',
+      projectDate: 2022,
+      projectDescription: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+      projectTechnologies: ['Ruby', 'Rails', 'PostgreSQL', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+      projectTextDesktop:
+        'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://radiant-temple-57492.herokuapp.com/',
+      seeSourceCode: 'https://github.com/amrendrakind/recipe-app',
+    },
+    {
+      key: 8,
       projectName: 'Financial Metrics',
       projectImageMobile: './projects/FinancialMetrices.png',
       projectImageDesktop: './projects/FinancialMetrices.png',
@@ -19,7 +37,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/financial-metrics/',
     },
     {
-      key: 1,
+      key: 7,
       projectName: 'Space Travelers',
       projectImageMobile: './projects/SpaceTravellersHub.png',
       projectImageDesktop: './projects/SpaceTravellersHub.png',
@@ -40,7 +58,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/space-travelers/',
     },
     {
-      key: 2,
+      key: 6,
       projectName: 'BookStore',
       projectImageMobile: './projects/Bookstore.png',
       projectImageDesktop: './projects/Bookstore.png',
@@ -61,7 +79,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/bookstore-react/',
     },
     {
-      key: 3,
+      key: 5,
       projectName: 'Math Magicians',
       projectImageMobile: './projects/Match-Magician.png',
       projectImageDesktop: './projects/Match-Magician.png',
@@ -97,7 +115,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/API-based-webapp/',
     },
     {
-      key: 5,
+      key: 3,
       projectName: 'Leaderboard',
       projectImageMobile: './projects/Leaderboard.png',
       projectImageDesktop: './projects/Leaderboard.png',
@@ -115,7 +133,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/Leaderboard/',
     },
     {
-      key: 6,
+      key: 2,
       projectName: 'ToDo Lists',
       projectImageMobile: './projects/ToDoList.png',
       projectImageDesktop: './projects/ToDoList.png',
@@ -133,7 +151,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/ToDoList/',
     },
     {
-      key: 7,
+      key: 1,
       projectName: 'Awesome Books',
       projectImageMobile: './projects/AwesomeBooks.png',
       projectImageDesktop: './projects/AwesomeBooks.png',
@@ -151,7 +169,7 @@ const data = {
       seeSourceCode: 'https://github.com/amrendrakind/AwesomeBooks_ES6/',
     },
     {
-      key: 8,
+      key: 0,
       projectName: 'Conference Page',
       projectImageMobile: './projects/ConferencePage.png',
       projectImageDesktop: './projects/ConferencePage.png',
