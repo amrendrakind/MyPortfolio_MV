@@ -1,6 +1,23 @@
 const data = {
   projects: [
     {
+      key: 12,
+      projectName: 'Ledger Lunacy',
+      projectImageMobile: './projects/ledger-lunacy.png',
+      projectImageDesktop: './projects/ledger-lunacy.png',
+      companyName: 'EQUITYLIST',
+      projectPosition: 'Full Stack Dev',
+      projectDate: 2024,
+      projectDescription: 'The Ledger Lunacy is about creating a UI for a bank account that investors use to invest in startups. You only have access to an API created by the underlying bank.',
+      projectTechnologies: ['React', 'Redux', 'API', 'CSS', 'HTML', 'GitFlow'],
+      projectTextMobile: 'The Ledger Lunacy is about creating a UI for a bank account that investors use to invest in startups.',
+      projectTextDesktop: 'The Ledger Lunacy is about creating a UI for a bank account that investors use to invest in startups. You only have access to an API created by the underlying bank.',
+      seeLive: './images/seeLive.png',
+      seeSource: './images/seeSource.png',
+      seeLivePage: 'https://ledger-lunacy-tnxq.onrender.com/',
+      seeSourceCode: 'https://github.com/amrendrakind/ledger-lunacy',
+    },
+    {
       key: 11,
       projectName: 'Cars App',
       projectImageMobile: './projects/Cars.png',
@@ -11,8 +28,7 @@ const data = {
       projectDescription: 'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
       projectTechnologies: ['Ruby', 'Rails', 'PostgreSQL', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
-      projectTextDesktop:
-        'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
+      projectTextDesktop: 'The Ruby on Rails capstone project a car appointment booking app that allows the user to select cars to book a test drive appointment.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://cars-capstone.herokuapp.com/',
@@ -29,8 +45,7 @@ const data = {
       projectDescription: 'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
       projectTechnologies: ['Ruby', 'Rails', 'PostgreSQL', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-      projectTextDesktop:
-        'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      projectTextDesktop: 'The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://lit-brook-15225.herokuapp.com/',
@@ -47,8 +62,7 @@ const data = {
       projectDescription: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
       projectTechnologies: ['Ruby', 'Rails', 'PostgreSQL', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
-      projectTextDesktop:
-        'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+      projectTextDesktop: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://radiant-temple-57492.herokuapp.com/',
@@ -65,8 +79,7 @@ const data = {
       projectDescription: 'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
       projectTechnologies: ['ReactJS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
-      projectTextDesktop:
-        'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
+      projectTextDesktop: 'This capstone project is about building a mobile web application to check a list of metrics (numeric values). It was created making use of React and Redux.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/financial-metrics/',
@@ -83,8 +96,7 @@ const data = {
       projectDescription: 'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.',
       projectTechnologies: ['ReactJS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.',
-      projectTextDesktop:
-        'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.'
+      projectTextDesktop: 'The Space Travellers Hub is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.'
         + 'User can go to My Profile that section displays all reserved rockets and space missions.'
         + 'User can join missions if they wish.'
         + 'Users can book each rocket by clicking the reservation button or cancel the previously made booking.',
@@ -104,8 +116,7 @@ const data = {
       projectDescription: 'This project is for Bookstore MVP version website. It will Display a list of books, Add a book, Remove a selected book. I will use use React and Redux.',
       projectTechnologies: ['ReactJS', 'Redux', 'JavaScript', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'This project is for Bookstore MVP version website. It will Display a list of books, Add a book, Remove a selected book. I will use use React and Redux.',
-      projectTextDesktop:
-        'The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I will create an MVP version of it that allows you to:'
+      projectTextDesktop: 'The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I will create an MVP version of it that allows you to:'
         + 'Display a list of books.'
         + 'Add a book.'
         + 'Remove a selected book.',
@@ -125,8 +136,7 @@ const data = {
       projectDescription: '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
       projectTechnologies: ['ReactJS', 'JavaScript', 'CSS', 'HTML', 'Webpack', 'GitFlow'],
       projectTextMobile: '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
-      projectTextDesktop:
-        '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
+      projectTextDesktop: '"Math Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random maths-related quote.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/math-magicians/',
@@ -143,8 +153,7 @@ const data = {
       projectDescription: 'Movie Shows capstone project is about building your web application based on an external API. We will select an API that provides data about a topic that we like and then build the webapp around it.',
       projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'Webpack', 'GitFlow'],
       projectTextMobile: 'Movie Shows capstone project is about building your web application based on an external API. We will select an API that provides data about a topic that we like and then build the webapp around it.',
-      projectTextDesktop:
-        'Movie Shows capstone project is about building your web application based on an external API. We will select an API that provides data about a topic that we like and then build the webapp around it.',
+      projectTextDesktop: 'Movie Shows capstone project is about building your web application based on an external API. We will select an API that provides data about a topic that we like and then build the webapp around it.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/API-based-webapp/',
@@ -161,8 +170,7 @@ const data = {
       projectDescription: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
       projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'API', 'Webpack', 'ES6', 'GitFlow'],
       projectTextMobile: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
-      projectTextDesktop:
-        'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
+      projectTextDesktop: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. I did it using ES6 and Webpack! It will be served by a webpack dev server.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/Leaderboard/',
@@ -179,8 +187,7 @@ const data = {
       projectDescription: '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
       projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'Webpack', 'ES6', 'GitFlow'],
       projectTextMobile: '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
-      projectTextDesktop:
-        '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
+      projectTextDesktop: '"To-Do List" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and did it using ES6 and Webpack!',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/ToDoList/',
@@ -197,8 +204,7 @@ const data = {
       projectDescription: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I learnt how to manage data using JavaScript.',
       projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'Webpack', 'ES6', 'GitFlow'],
       projectTextMobile: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I learnt how to manage data using JavaScript.',
-      projectTextDesktop:
-        '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I learnt how to manage data using JavaScript.',
+      projectTextDesktop: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I learnt how to manage data using JavaScript.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/AwesomeBooks_ES6/',
@@ -215,8 +221,7 @@ const data = {
       projectDescription: 'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
       projectTechnologies: ['JavaScript', 'CSS', 'HTML', 'GitFlow'],
       projectTextMobile: 'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
-      projectTextDesktop:
-        'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
+      projectTextDesktop: 'In this Conference Page capstone project We are going to build is based on an online website for a conference.',
       seeLive: './images/seeLive.png',
       seeSource: './images/seeSource.png',
       seeLivePage: 'https://amrendrakind.github.io/conferencePage_capstoneProject/',
